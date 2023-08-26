@@ -16,13 +16,8 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 ```
 
 Link to Dataset: https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml?select=test.csv 
-
-println!("{}",
-    table!(
-        "{^:10:}" => "Number of Observation", "{^:10:}" => "31,876 ";
-        "Missing Values", "0"
-    ).format()
-);
+- Number of Observations: 31,876 data
+- Missing Values: 0
 
 
 # Data Overview
