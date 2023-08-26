@@ -1,4 +1,5 @@
 # ECS171
+# !pip3 install xgboost
 
 Link to Dataset: https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml?select=test.csv 
 
