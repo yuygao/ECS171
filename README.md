@@ -36,7 +36,7 @@ It could provide us an overview of the distribution of our dataset. These five s
 This shows the correlation coefficient between every pair of variables. We remove any variables that are highly correlated (correlation > 0.7) to avoid multicollinearity issues. In our case, we found high correlations among accommodations, beds, and bedrooms. Similarly, longitude, latitude, and zipcode exhibit strong correlations. There's also a high correlation between cleaning fee and host_has_profile_pic. Consequently, we remove 'longitude', 'latitude', 'accommodates', and 'host_has_profile_pic'. Finally, we generate a new heatmap and re-examine the correlations. Below are presented two heatmaps:
 
 Before removing the variables with high correlations:
-
+![Heatmap1](https://github.com/yuygao/ECS171/assets/112483058/5ebc51b2-a4b2-479b-96ff-b4f2f0436aa4)
 After removing the variables with high correlations:
 
 - Histograms
