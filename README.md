@@ -31,8 +31,11 @@ The original dataset contains 99,569 rows and 29 columns. For this project, we h
 
 We have four main sections for our Data Exploration Milestone: 
 **- Column Descriptions**
+
 **- Data processing**
+
 **- Data distributions (Data Visualization)**
+
 **- Data splitting**
 
 # Column Descriptions
