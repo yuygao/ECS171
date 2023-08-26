@@ -1,7 +1,9 @@
 # ECS171
+Install Library
 ```ruby
 !pip3 install xgboost
 ```
+Set Up Coding Environment
 ```ruby
 import numpy as np
 import pandas as pd
