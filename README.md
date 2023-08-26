@@ -67,3 +67,5 @@ By combining heatmaps, histograms, and pairplots, we can comprehensively explore
 
 # Data splitting 
 After the data cleaning and processing phases, we divided the dataset into an 8:2 split. We proceed to evaluate variable accuracy, concentrating on key factors such as 'instant_bookable,' 'cleaning fee,' and 'host_has_profile_pic.'
+
+![datasplit](https://github.com/yuygao/ECS171/assets/112483058/11c16af2-b547-4616-b794-44ff2987892a)
