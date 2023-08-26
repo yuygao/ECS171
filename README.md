@@ -14,6 +14,7 @@ We have four main sections for our Data Exploration Milestone:
 - Data processing
 - Data distributions (Data Visualization)
 - Data splitting 
+![dataDescriptions](https://github.com/yuygao/ECS171/assets/112483058/d6de3c5e-55fb-46b2-876c-a693f3c6fd80)
 
 # Data processing
 We cleaning dataset by the following four steps: 
