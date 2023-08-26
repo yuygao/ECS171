@@ -53,13 +53,14 @@ After removing the variables with high correlations:
 ![Heatmap 2](https://github.com/yuygao/ECS171/assets/112483058/199c985e-9fd8-4b6b-86ce-d51dbecf5f8b)
 - Histograms
 We plot histograms of each individual variable to see the details of their distributions. This allows us to check for outliers, skewness, and other properties. In our case, since most of our variables are categorical, the histograms plot could show us the frequency distribution and patterns within our data. For example, for property type, where we observe four different types (0-4) representing 'Apartment' as 0, 'House' as 1, 'Townhouse' as 2,  'Hostel' as 3, and ‘Others’ as 4. We observed that 'Apartment' has approximately 20,000 occurrences, 'House' is around 7,600, 'Townhouse' has approximately 1,000, while 'Hostel' does not have any occurrences. Then, the category 'Others' is present in about 2,600 occurrences. 
-
+![histogram](https://github.com/yuygao/ECS171/assets/112483058/22bad2ec-76f5-424c-9a1f-d1a57a91e144)
 - Q-Q plot
 A QQ plot is used to assess whether our dataset follows a normal distribution. If our data points lie approximately along a straight line, it indicates that the data is approximated by the normal distribution. In our case, we could see that our data points of log price fall along a dashed line, so it suggests a good fit to the normal distribution.
 
+![QQ](https://github.com/yuygao/ECS171/assets/112483058/65fc31fa-2d4c-4d0f-840c-e8e861920be4)
 - Pairplots
 Using seaborn pairplot, we visualize pairwise relationships between all variables via a matrix of scatterplots. The lower triangle shows the scatter plots while the upper triangle displays the Pearson correlation coefficient. Pairplots provide a quick overview of the correlations and distributions between all variable pairs in one chart.
-
+![pairplot](https://github.com/yuygao/ECS171/assets/112483058/ffb1f30b-57bc-4b74-9d22-dcd15c0028a4)
 By combining heatmaps, histograms, and pairplots, we can comprehensively explore the univariate and bivariate relationships in the dataset. By combining heatmaps, histograms, and pairplots, we can comprehensively explore the univariate and bivariate relationships in the dataset.
 
 # Data splitting 
