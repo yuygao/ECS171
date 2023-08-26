@@ -68,7 +68,7 @@ By combining heatmaps, histograms, and pairplots, we can comprehensively explore
 # Data splitting 
 After the data cleaning and processing phases, we divided the dataset into an 8:2 split. We proceed to evaluate variable accuracy, concentrating on key factors such as 'instant_bookable,' 'cleaning fee,' and 'host_has_profile_pic.'
 
-X_train shape: (25500, 15)
-X_test shape: (6376, 15)
-y_train shape: (25500,)
-y_test shape: (6376,)
+- X_train shape: (25500, 15)
+- X_test shape: (6376, 15)
+- y_train shape: (25500,)
+- y_test shape: (6376,)
