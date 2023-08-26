@@ -30,6 +30,7 @@ The original dataset contains 99,569 rows and 29 columns. For this project, we h
 - If we want to keep the high-cardinality category, we will extract the most common values as their own classes (e.g. 0 to 4), and assign 5 to more infrequent "other" values.
 
 We have four main sections for our Data Exploration Milestone: 
+
 **- Column Descriptions**
 
 **- Data processing**
