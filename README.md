@@ -183,32 +183,37 @@ For the third section and fourth section, we focus on evaluating our model compa
   - Mean Squared Error(train): 0.1003135315353569
   - Mean Squared Error(test): 0.17570978840673054
 
+Let's analyze these MSE values to understand the model's performance:
 
-In this case, we have a series of Mean Squared Error (MSE) values for both the training and testing datasets at different iterations or degrees of a model. Let's analyze these MSE values to understand the model's performance:
+**First Iteration:**
 
-First Iteration:
 Training MSE: 0.1724
 Testing MSE: 0.1803
+
 The initial iteration starts with a relatively close training and testing MSE, indicating that the model's performance on the training and testing data is reasonably similar.
 
-Second Iteration:
+**Second Iteration:**
 Training MSE: 0.1518
 Testing MSE: 0.1682
+
 In the second iteration, both training and testing MSE decrease, which is generally a positive sign. The model is improving its fit to the data.
 
-Third Iteration:
+**Third Iteration:**
 Training MSE: 0.1388
 Testing MSE: 0.1695
+
 The training MSE continues to decrease, suggesting that the model is fitting the training data better. However, the testing MSE increases slightly, which can be a sign of the model starting to overfit the training data.
 
-Fourth Iteration:
+**Fourth Iteration:**
 Training MSE: 0.1226
 Testing MSE: 0.1705
+
 Similar to the third iteration, the training MSE decreases, and the testing MSE continues to increase slightly. This trend may indicate further overfitting.
 
-Fifth Iteration:
+**Fifth Iteration:**
 Training MSE: 0.1020
 Testing MSE: 0.1774
+
 In the fifth iteration, the training MSE decreases significantly, indicating a very good fit to the training data. However, the testing MSE increases substantially, suggesting significant overfitting. The model's performance on the testing data has significantly deteriorated compared to earlier iterations.
 
 
