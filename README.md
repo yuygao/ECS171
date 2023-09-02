@@ -151,9 +151,7 @@ For Exploratory Data Analysis (EDA) step,
 
 **Step Two - Train our first model**
 
-In the second section, where we focus on training our first model, 
-
-   - For the first model, we choose XGBoost modeling.
+In the second section, where we focus on training our first model XGBoost modeling,
    
    - **Visualization:** we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
 
