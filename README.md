@@ -143,3 +143,14 @@ In the second section, where we focus on training our first model,
 
 
 For the third section and fourth section, we focus on evaluating our model compare training vs test error and assessing model complexity, we have the following steps:
+- Error Calculation: To see the fitness of our model and determine whether it is overfitting or underfitting, we compared training and test errors.
+      Mean Squared Error(train): 0.1723742638274122
+      Mean Squared Error(test): 0.18030066467327774
+      Mean Squared Error(train): 0.1517298671566797
+      Mean Squared Error(test): 0.16809802623341427
+      Mean Squared Error(train): 0.1383754619210304
+      Mean Squared Error(test): 0.16871127829132468
+      Mean Squared Error(train): 0.12179095868127136
+      Mean Squared Error(test): 0.17274424303443245
+      Mean Squared Error(train): 0.1003135315353569
+      Mean Squared Error(test): 0.17570978840673054
