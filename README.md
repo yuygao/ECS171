@@ -134,3 +134,8 @@ In the second section, where we focus on training our first model,
 ![important1_0](https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed)
 
 ![important2_0](https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128)
+
+      - **Dataset Used**: We use the normalized dataset for our model. Upon running the model, we obtain the following evaluation metrics:
+        - Mean Squared Error: 0.17742309717426058
+        - Root Mean Squared Error: 0.4212162119081607
+        - R-squared: 0.6199305447777961
