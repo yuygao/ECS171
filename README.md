@@ -103,17 +103,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 For this milestone, we will focus on four key steps:
 
 1. Finish major preprocessing
- - Imputing your data, 
- - Encoding your data,
- - Feature expansion, 
- - Scaling and/or transforming your data,
- - Data Splitting
-
-2. Train our first model
-   
-4. Evaluate our model compare training vs test error
-   
-6. Where does our model fit in the fitting graph?
+    - Imputing your data, 
+    - Encoding your data,
+    - Feature expansion, 
+    - Scaling and/or transforming your data,
+    - Data Splitting
+2. Train our first model  
+3. Evaluate our model compare training vs test error
+4. Where does our model fit in the fitting graph?
 
 As we approach this milestone, let's take a moment to update and wrap up any remaining data preprocessing tasks:
  - First, in our initial preprocessing step, we started by examining the raw dataset for missing or duplicate values. We found that our dataset doesn't contain any missing values, so there's no need to drop or replace null values with means, medians, or other values.
