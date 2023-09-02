@@ -171,7 +171,9 @@ In the second section, where we focus on training our first model XGBoost modeli
 **Step Three & Four - Evaluate our model compare training vs test error and Check if Overfitting**
 
 For the third section and fourth section, we focus on evaluating our model compare training vs test error and assessing model complexity, we have the following steps:
-- Error Calculation: To see the fitness of our model and determine whether it is overfitting or underfitting, we compared training and test errors.
+
+- **Error Calculation:** To see the fitness of our model and determine whether it is overfitting or underfitting, we compared training and test errors.
+  
   - Mean Squared Error(train): 0.1723742638274122
   - Mean Squared Error(test): 0.18030066467327774
   - Mean Squared Error(train): 0.1517298671566797
