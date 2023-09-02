@@ -144,8 +144,8 @@ print("X_test shape:", X_test.shape)
 print("y_train shape:", y_train.shape)
 print("y_test shape:", y_test.shape)
 ```
-- X_train shape: (25500, 15)
-- X_test shape: (6376, 15)
+- X_train shape: (25500, 13)
+- X_test shape: (6376, 13)
 - y_train shape: (25500,)
 - y_test shape: (6376,)
   
