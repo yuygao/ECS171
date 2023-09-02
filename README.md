@@ -102,27 +102,24 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ## Assignment 2: Preprocessing & First Model building and evaluation Milestone
 For this milestone, we will focus on four key steps:
 
-**1. Finish major preprocessing**
-
+1. Finish major preprocessing
     - Imputing your data, 
     - Encoding your data,
     - Feature expansion, 
     - Scaling and/or transforming your data,
     - Data Splitting
     
-**2. Train our first model**
-
-**3. Evaluate our model compare training vs test error**
-
-**4. Where does our model fit in the fitting graph?**
+2. Train our first model
+3. Evaluate our model compare training vs test error
+4. Where does our model fit in the fitting graph?
    
 As we approach this milestone, let's take a moment to see the data preprocessing frist:
  - First, in our initial preprocessing step, we started by examining the raw dataset for missing or duplicate values. We found that our dataset doesn't contain any missing values, so there's no need to drop or replace null values with means, medians, or other values.
  - Next, we organized the dataset into two main categories: categorical variables and numerical variables. We've identified 10 categorical variables, which include property_type, room_type, bed_type, cancellation_policy, cleaning_fee, city, host_has_profile_pic, host_identity_verified, host_response_rate, and instant_bookable. Additionally, there are 9 numerical variables, such as log_price1, accommodates, bathrooms, latitude, longitude, number_of_reviews, review_scores_rating, bedrooms, and beds.
  - Once we distinguished between the different variable types, we applied label encoding to the categorical variables within the cleaned datasets. This encoding process allowed us to convert string labels into numerical representations, which is essential for handling categorical variables in our analysis. Then, we normalized our data by standardizing the numerical data. After the dataset was transformed, we divided it into training and testing sets using an 80:20 ratio.
-   - For specific categorical variables like property_type, room_type, bed_type, cancellation_policy, and city, we use a hard label encoding technique. This method allows us to create a mapping dictionary and assign unique whole number integers to each category within these variables.
-   - For other variables such as host_identity_verified, instant_bookable, and cleaning_fee, we use the LabelEncoder() method for encoding. 'True' is encoded as 1, while 'False' is encoded as 0.
-   - Then, we ensure that our dataset is appropriately scaled by applying normalization using the MinMaxScaler() method. This step helps us to standardize the numerical features, ensuring they fall within a consistent range for our analysis. Regarding our target variable, "price," it's important to note that it has already a transformation from its original price to the natural logarithm (log of price) in the raw dataset we obtained from Kaggle. As a result, we keep it in its log-transformed state and there's no need for further normalization, as this transformation is essential for our analysis.
+      - For specific categorical variables like property_type, room_type, bed_type, cancellation_policy, and city, we use a hard label encoding technique. This method allows us to create a mapping dictionary and assign unique whole number integers to each category within these variables.
+      - For other variables such as host_identity_verified, instant_bookable, and cleaning_fee, we use the LabelEncoder() method for encoding. 'True' is encoded as 1, while 'False' is encoded as 0.
+ - Then, we ensure that our dataset is appropriately scaled by applying normalization using the MinMaxScaler() method. This step helps us to standardize the numerical features, ensuring they fall within a consistent range for our analysis. Regarding our target variable, "price," it's important to note that it has already a transformation from its original price to the natural logarithm (log of price) in the raw dataset we obtained from Kaggle. As a result, we keep it in its log-transformed state and there's no need for further normalization, as this transformation is essential for our analysis.
    - In the last step of our data preprocessing, we divided the normalized dataset into training and testing sets with an 80:20 ratio.
      
 For Exploratory Data Analysis (EDA) step,
