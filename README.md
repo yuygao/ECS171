@@ -122,3 +122,8 @@ For Exploratory Data Analysis (EDA) step,
  - We plot the dataset with histogram, scatter plot and box plot for data visualization to view the relationship between target variable log_price and other variables.
  - We create correlation matrices to identify columns with high correlations. Based on the basic correlation matrix, we remove a particular column exceeding the threshold (0.7) and recompute the correlation matrix. In our case, we observed that the columns 'bedrooms,' 'beds,' 'accommodates,' 'longitude,' and 'latitude' exhibit high correlations. As a result, we removed the following columns: 'longitude,' 'latitude,' 'accommodates,' and 'host_has_profile_pic.' After this adjustment, we rechecked the correlation values and found that no columns showed high correlations. So it could indicate that our dataset is now better suited for our analysis without strong multicollinearity issues.
    
+In the second section, where we focus on training our first model,
+ - For model building:
+    - Baseline Model: We start by establishing a baseline model using logistic regression. Upon calculation, we obtain the following results:
+      - Mean_squared_error: 0.20525908305978738
+      - Accuracy: 0.7929736511919699.  
