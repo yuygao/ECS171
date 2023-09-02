@@ -127,3 +127,5 @@ In the second section, where we focus on training our first model,
     - Baseline Model: We start by establishing a baseline model using logistic regression. Upon calculation, we obtain the following results:
       - Mean_squared_error: 0.20525908305978738
       - Accuracy: 0.7929736511919699.  
+    - For the first model, we choose XGBoost modeling.
+      - **Visualization**: we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
