@@ -110,3 +110,8 @@ For this milestone, we will focus on four key steps:
 3. Evaluate our model compare training vs test error
 4. Where does our model fit in the fitting graph?
 
+As we approach this milestone, let's take a moment to update and wrap up any remaining data preprocessing tasks:
+ - First, in our initial preprocessing step, we started by examining the raw dataset for missing or duplicate values. We found that our dataset doesn't contain any missing values, so there's no need to drop or replace null values with means, medians, or other values.
+ - Next, we organized the dataset into two main categories: categorical variables and numerical variables. We've identified 10 categorical variables, which include property_type, room_type, bed_type, cancellation_policy, cleaning_fee, city, host_has_profile_pic, host_identity_verified, host_response_rate, and instant_bookable. Additionally, there are 9 numerical variables, such as log_price1, accommodates, bathrooms, latitude, longitude, number_of_reviews, review_scores_rating, bedrooms, and beds.
+ - Once we distinguished between these variable types, we divided the dataset into training and testing sets with an 80:20 ratio. Following this split, we applied label encoding to the categorical variables within both the X train and X test datasets. This encoding process allowed us to convert string labels into numerical representations, which is essential for handling these categorical variables in our analysis.
+   - For specific categorical variables like property_type, room_type, bed_type, cancellation_policy, and city, we use a hard label encoding technique. This method allows us to create a mapping dictionary and assign unique whole number integers to each category within these variables.
