@@ -183,6 +183,6 @@ For the third section and fourth section, we focus on evaluating our model compa
   - Mean Squared Error(train): 0.1003135315353569
   - Mean Squared Error(test): 0.17570978840673054
     
-We computed the Mean Squared Error (MSE) for our model at different complexity levels, ranging from 1 to 5. The results showed a trend where the test MSE reached its lowest point, 0.16378396806262444, at a complexity level of 2. At this complexity level, the gap between the training and testing MSE was smaller compared to the gap at complexity 3. It means that a model complexity of 2 shows a good balance. Beyond complexity 3, the model had signs of overfitting, where it performed exceptionally well on the training data but performed poorly on unseen test data. 
+We computed the Mean Squared Error (MSE) for our model at different complexity levels, ranging from 1 to 5. The results showed a trend where the test MSE reached its lowest point, 0.16378396806262444, at a complexity level of 2. At this complexity level of 2, the gap between the training and testing MSE was smaller compared to the gap at complexity 3. It means that a model complexity of 2 shows a good balance (or optimal fit). At this complexity level of 3, 4 and 5, the model had signs of overfitting, where it performed exceptionally well on the training data but performed poorly on unseen test data. 
 
 ![final](https://github.com/yuygao/ECS171/assets/112483058/2b849a5c-0562-4d2e-8b22-5c1b9ebcbf66)
