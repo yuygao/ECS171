@@ -112,7 +112,9 @@ For this milestone, we will focus on four key steps:
 2. Train our first model
 3. Evaluate our model compare training vs test error
 4. Where does our model fit in the fitting graph?
-   
+
+**Step One - Finish major preprocessing**
+
 As we approach this milestone, let's take a moment to see the data preprocessing frist:
  - **Data Cleaning:** First, in our initial preprocessing step, we started by examining the raw dataset for missing or duplicate values. We found that our dataset doesn't contain any missing values, so there's no need to drop or replace null values with means, medians, or other values.
  - **Column Type Identification for Processed Datase:** Next, we organized the dataset into two main categories: categorical variables and numerical variables. We've identified 10 categorical variables, which include property_type, room_type, bed_type, cancellation_policy, cleaning_fee, city, host_has_profile_pic, host_identity_verified, host_response_rate, and instant_bookable. Additionally, there are 9 numerical variables, such as log_price1, accommodates, bathrooms, latitude, longitude, number_of_reviews, review_scores_rating, bedrooms, and beds.
@@ -146,7 +148,9 @@ print("y_test shape:", y_test.shape)
 For Exploratory Data Analysis (EDA) step,
  - We plot the dataset with histogram, scatter plot and box plot for data visualization to view the relationship between target variable log_price and other variables.
  - We create correlation matrices to identify columns with high correlations. Based on the basic correlation matrix, we remove a particular column exceeding the threshold (0.7) and recompute the correlation matrix. In our case, we observed that the columns 'bedrooms,' 'beds,' 'accommodates,' 'longitude,' and 'latitude' exhibit high correlations. As a result, we removed the following columns: 'longitude,' 'latitude,' 'accommodates,' and 'host_has_profile_pic.' After this adjustment, we rechecked the correlation values and found that no columns showed high correlations. So it could indicate that our dataset is now better suited for our analysis without strong multicollinearity issues.
-   
+
+**Step Two - Train our first model**
+
 In the second section, where we focus on training our first model, 
     - For the first model, we choose XGBoost modeling.
       - **Visualization**: we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
@@ -162,6 +166,7 @@ In the second section, where we focus on training our first model,
      -  Root Mean Squared Error: 0.4212162119081607
      -  R-squared: 0.6199305447777961
 
+**Step Three & Four - Evaluate our model compare training vs test error and Check if Overfitting**
 
 For the third section and fourth section, we focus on evaluating our model compare training vs test error and assessing model complexity, we have the following steps:
 - Error Calculation: To see the fitness of our model and determine whether it is overfitting or underfitting, we compared training and test errors.
