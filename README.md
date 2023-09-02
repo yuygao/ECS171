@@ -102,16 +102,16 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ## Assignment 2: Preprocessing & First Model building and evaluation Milestone
 For this milestone, we will focus on four key steps:
 
-**1. Finish major preprocessing
+**1. Finish major preprocessing**
     - Imputing your data, 
     - Encoding your data,
     - Feature expansion, 
     - Scaling and/or transforming your data,
     - Data Splitting
-2. Train our first model  
-3. Evaluate our model compare training vs test error
-4. Where does our model fit in the fitting graph?**
-
+**2. Train our first model**
+**3. Evaluate our model compare training vs test error**
+**4. Where does our model fit in the fitting graph?**
+   
 As we approach this milestone, let's take a moment to see the data preprocessing frist:
  - First, in our initial preprocessing step, we started by examining the raw dataset for missing or duplicate values. We found that our dataset doesn't contain any missing values, so there's no need to drop or replace null values with means, medians, or other values.
  - Next, we organized the dataset into two main categories: categorical variables and numerical variables. We've identified 10 categorical variables, which include property_type, room_type, bed_type, cancellation_policy, cleaning_fee, city, host_has_profile_pic, host_identity_verified, host_response_rate, and instant_bookable. Additionally, there are 9 numerical variables, such as log_price1, accommodates, bathrooms, latitude, longitude, number_of_reviews, review_scores_rating, bedrooms, and beds.
