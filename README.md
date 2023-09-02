@@ -120,8 +120,28 @@ As we approach this milestone, let's take a moment to see the data preprocessing
       - For specific categorical variables like property_type, room_type, bed_type, cancellation_policy, and city, we use a hard label encoding technique. This method allows us to create a mapping dictionary and assign unique whole number integers to each category within these variables.
       - For other variables such as host_identity_verified, instant_bookable, and cleaning_fee, we use the LabelEncoder() method for encoding. 'True' is encoded as 1, while 'False' is encoded as 0.
 - Then, we ensure that our dataset is appropriately scaled by applying normalization using the MinMaxScaler() method. This step helps us to standardize the numerical features, ensuring they fall within a consistent range for our analysis. Regarding our target variable, "price," it's important to note that it has already a transformation from its original price to the natural logarithm (log of price) in the raw dataset we obtained from Kaggle. As a result, we keep it in its log-transformed state and there's no need for further normalization, as this transformation is essential for our analysis.
+
 - In the last step of our data preprocessing, we divided the normalized dataset into training and testing sets with an 80:20 ratio.
-     
+```ruby
+# Define features (attributes) and labels
+X = normalized_data_merged.drop(['log_price'], axis=1)
+y = normalized_data_merged['log_price']
+
+# labels = np.unique(y)
+# print("Unique labels:", labels)
+
+# Split the data into training and testing sets with 80:20
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+print("X_train shape:", X_train.shape)
+print("X_test shape:", X_test.shape)
+print("y_train shape:", y_train.shape)
+print("y_test shape:", y_test.shape)
+```
+- X_train shape: (25500, 15)
+- X_test shape: (6376, 15)
+- y_train shape: (25500,)
+- y_test shape: (6376,)
+  
 For Exploratory Data Analysis (EDA) step,
  - We plot the dataset with histogram, scatter plot and box plot for data visualization to view the relationship between target variable log_price and other variables.
  - We create correlation matrices to identify columns with high correlations. Based on the basic correlation matrix, we remove a particular column exceeding the threshold (0.7) and recompute the correlation matrix. In our case, we observed that the columns 'bedrooms,' 'beds,' 'accommodates,' 'longitude,' and 'latitude' exhibit high correlations. As a result, we removed the following columns: 'longitude,' 'latitude,' 'accommodates,' and 'host_has_profile_pic.' After this adjustment, we rechecked the correlation values and found that no columns showed high correlations. So it could indicate that our dataset is now better suited for our analysis without strong multicollinearity issues.
