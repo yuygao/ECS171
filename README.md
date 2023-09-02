@@ -96,3 +96,17 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 - X_test shape: (6376, 15)
 - y_train shape: (25500,)
 - y_test shape: (6376,)
+
+
+
+## Preprocessing & First Model building and evaluation Milestone
+For this milestone, we will focus on four key steps:
+1. Finish major preprocessing
+ - Scaling and/or transforming your data,
+ - Imputing your data, 
+ - Encoding your data, 
+ - Feature expansion, 
+2. Train our first model
+3. Evaluate our model compare training vs test error
+4. Where does our model fit in the fitting graph?
+
