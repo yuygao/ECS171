@@ -14,12 +14,15 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 ```
-
+**Assignment 1: Data Exploration Milestone**
 - Link to Dataset: https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml?select=test.csv
 - Link to our jupyter notebook: https://github.com/yuygao/ECS171/blob/2b4d2be221ccd90ac4a89d584f4aadff8738c84d/Project%20Code%20and%20Dataset/ECS171_Project_Code.ipynb
 - Number of Observations: 31,876 data records
 - Number of variables: 20
 - Missing Values: 0
+
+**Assignment 2: Preprocessing & First Model building and evaluation Milestone**
+- Link to our jupyter notebook: 
 
 
 # Data Overview
