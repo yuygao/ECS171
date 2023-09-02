@@ -152,8 +152,10 @@ For Exploratory Data Analysis (EDA) step,
 **Step Two - Train our first model**
 
 In the second section, where we focus on training our first model, 
+
     - For the first model, we choose XGBoost modeling.
-      - **Visualization**: we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
+    
+      - **Visualization:** we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
 
 ![price2_0](https://github.com/yuygao/ECS171/assets/112483058/5231a2c0-938c-4250-9bfd-118da87dc2f5)
 
@@ -161,10 +163,12 @@ In the second section, where we focus on training our first model,
 
 ![important2_0](https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128)
 
+
    - **Dataset Used:** We use the normalized dataset for our model. Upon running the model, we obtain the following evaluation metrics:
      -  Mean Squared Error: 0.17742309717426058
      -  Root Mean Squared Error: 0.4212162119081607
      -  R-squared: 0.6199305447777961
+
 
 **Step Three & Four - Evaluate our model compare training vs test error and Check if Overfitting**
 
