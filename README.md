@@ -130,3 +130,7 @@ In the second section, where we focus on training our first model,
     - For the first model, we choose XGBoost modeling.
       - **Visualization**: we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
 ![price2_0](https://github.com/yuygao/ECS171/assets/112483058/5231a2c0-938c-4250-9bfd-118da87dc2f5)
+
+![important1_0](https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed)
+
+![important2_0](https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128)
