@@ -182,7 +182,36 @@ For the third section and fourth section, we focus on evaluating our model compa
   - Mean Squared Error(test): 0.17274424303443245
   - Mean Squared Error(train): 0.1003135315353569
   - Mean Squared Error(test): 0.17570978840673054
-    
+
+
+In this case, we have a series of Mean Squared Error (MSE) values for both the training and testing datasets at different iterations or degrees of a model. Let's analyze these MSE values to understand the model's performance:
+
+First Iteration:
+Training MSE: 0.1724
+Testing MSE: 0.1803
+The initial iteration starts with a relatively close training and testing MSE, indicating that the model's performance on the training and testing data is reasonably similar.
+
+Second Iteration:
+Training MSE: 0.1518
+Testing MSE: 0.1682
+In the second iteration, both training and testing MSE decrease, which is generally a positive sign. The model is improving its fit to the data.
+
+Third Iteration:
+Training MSE: 0.1388
+Testing MSE: 0.1695
+The training MSE continues to decrease, suggesting that the model is fitting the training data better. However, the testing MSE increases slightly, which can be a sign of the model starting to overfit the training data.
+
+Fourth Iteration:
+Training MSE: 0.1226
+Testing MSE: 0.1705
+Similar to the third iteration, the training MSE decreases, and the testing MSE continues to increase slightly. This trend may indicate further overfitting.
+
+Fifth Iteration:
+Training MSE: 0.1020
+Testing MSE: 0.1774
+In the fifth iteration, the training MSE decreases significantly, indicating a very good fit to the training data. However, the testing MSE increases substantially, suggesting significant overfitting. The model's performance on the testing data has significantly deteriorated compared to earlier iterations.
+
+
 We computed the Mean Squared Error (MSE) for our model at different complexity levels, ranging from 1 to 5. The results showed a trend where the test MSE reached its lowest point, 0.16378396806262444, at a complexity level of 2. At this complexity level of 2, the gap between the training and testing MSE was smaller compared to the gap at complexity 3. It means that a model complexity of 2 shows a good balance (or optimal fit). At this complexity level of 3, 4 and 5, the model had signs of overfitting, where it performed exceptionally well on the training data but performed poorly on unseen test data. 
 
 ![final](https://github.com/yuygao/ECS171/assets/112483058/2b849a5c-0562-4d2e-8b22-5c1b9ebcbf66)
