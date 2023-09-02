@@ -101,14 +101,19 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ## Preprocessing & First Model building and evaluation Milestone
 For this milestone, we will focus on four key steps:
+
 1. Finish major preprocessing
- - Scaling and/or transforming your data,
  - Imputing your data, 
- - Encoding your data, 
+ - Encoding your data,
  - Feature expansion, 
+ - Scaling and/or transforming your data,
+ - Data Splitting
+
 2. Train our first model
-3. Evaluate our model compare training vs test error
-4. Where does our model fit in the fitting graph?
+   
+4. Evaluate our model compare training vs test error
+   
+6. Where does our model fit in the fitting graph?
 
 As we approach this milestone, let's take a moment to update and wrap up any remaining data preprocessing tasks:
  - First, in our initial preprocessing step, we started by examining the raw dataset for missing or duplicate values. We found that our dataset doesn't contain any missing values, so there's no need to drop or replace null values with means, medians, or other values.
@@ -116,17 +121,14 @@ As we approach this milestone, let's take a moment to update and wrap up any rem
  - Once we distinguished between the different variable types, we applied label encoding to the categorical variables within the cleaned datasets. This encoding process allowed us to convert string labels into numerical representations, which is essential for handling categorical variables in our analysis. Then, we normalized our data by standardizing the numerical data. After the dataset was transformed, we divided it into training and testing sets using an 80:20 ratio.
    - For specific categorical variables like property_type, room_type, bed_type, cancellation_policy, and city, we use a hard label encoding technique. This method allows us to create a mapping dictionary and assign unique whole number integers to each category within these variables.
    - For other variables such as host_identity_verified, instant_bookable, and cleaning_fee, we use the LabelEncoder() method for encoding. 'True' is encoded as 1, while 'False' is encoded as 0.
-   - In the last step of our data preprocessing, we ensure that our dataset are appropriately scaled by applying normalization using the MinMaxScaler() method. This step helps us to standardize the numerical features, ensuring they fall within a consistent range for our analysis. Regarding our target variable, "price," it's important to note that it has already a transformation from its original price to the natural logarithm (log of price) in the raw dataset we obtained from Kaggle. As a result, we keep it in its log-transformed state and there's no need for further normalization, as this transformation is essential for our analysis.
-
+   - Then, we ensure that our dataset is appropriately scaled by applying normalization using the MinMaxScaler() method. This step helps us to standardize the numerical features, ensuring they fall within a consistent range for our analysis. Regarding our target variable, "price," it's important to note that it has already a transformation from its original price to the natural logarithm (log of price) in the raw dataset we obtained from Kaggle. As a result, we keep it in its log-transformed state and there's no need for further normalization, as this transformation is essential for our analysis.
+   - In the last step of our data preprocessing, we divided the normalized dataset into training and testing sets with an 80:20 ratio.
+     
 For Exploratory Data Analysis (EDA) step,
  - We plot the dataset with histogram, scatter plot and box plot for data visualization to view the relationship between target variable log_price and other variables.
  - We create correlation matrices to identify columns with high correlations. Based on the basic correlation matrix, we remove a particular column exceeding the threshold (0.7) and recompute the correlation matrix. In our case, we observed that the columns 'bedrooms,' 'beds,' 'accommodates,' 'longitude,' and 'latitude' exhibit high correlations. As a result, we removed the following columns: 'longitude,' 'latitude,' 'accommodates,' and 'host_has_profile_pic.' After this adjustment, we rechecked the correlation values and found that no columns showed high correlations. So it could indicate that our dataset is now better suited for our analysis without strong multicollinearity issues.
    
-In the second section, where we focus on training our first model,
- - For model building:
-    - Baseline Model: We start by establishing a baseline model using logistic regression. Upon calculation, we obtain the following results:
-      - Mean_squared_error: 0.20525908305978738
-      - Accuracy: 0.7929736511919699.  
+In the second section, where we focus on training our first model, 
     - For the first model, we choose XGBoost modeling.
       - **Visualization**: we create a scatter plot that visually compares predicted prices with actual log_prices. Additionally, we generate two types of Feature Importance Plots to gain insights into the significance of different features in our model.
 
