@@ -236,14 +236,14 @@ Our group project aims to help predict the price of Airbnb listings in major US 
 
 ### Variables summary
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/e9818180-3002-4f2b-b133-d026c1145c39" alt="Column Descriptions" width="700" height="650">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/e9818180-3002-4f2b-b133-d026c1145c39" alt="Column Descriptions">
 </div>
 <p align="center">Figure.1 Variables summary table</p>
 
 
 ### Five-number Summary Statistics
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/e94eaef4-8e96-45c9-81f9-e6fb1428049e" alt="Five-number Summary Statistics" width="700" height="650">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/e94eaef4-8e96-45c9-81f9-e6fb1428049e" alt="Five-number Summary Statistics" >
 </div>
 <p align="center">Figure.2 Five-number Summary Statistics table</p>
 
@@ -256,25 +256,25 @@ Our group project aims to help predict the price of Airbnb listings in major US 
 
 #### Heatmap After removing the variables with high correlations
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/199c985e-9fd8-4b6b-86ce-d51dbecf5f8b" alt="Heatmap 2" width="600" height="600">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/199c985e-9fd8-4b6b-86ce-d51dbecf5f8b" alt="Heatmap 2">
 </div>
 <p align="center">Figure.4 Heatmap After removing the variables with high correlations</p>
 
 ### Histograms
 <p align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/22bad2ec-76f5-424c-9a1f-d1a57a91e144" alt="histogram" width="600" height="600">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/22bad2ec-76f5-424c-9a1f-d1a57a91e144" alt="histogram">
 </p>
 <p align="center">Figure.5 Histograms of individual variable data distributions</p>
 
 ### Q-Q plot
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/65fc31fa-2d4c-4d0f-840c-e8e861920be4" alt="Image Description" width="800" height="500">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/65fc31fa-2d4c-4d0f-840c-e8e861920be4" alt="Image Description">
 </div>
 <p align="center">Figure.6 Q-Q plot of checking normal distribution</p>
 
 ### PairPlots
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/ffb1f30b-57bc-4b74-9d22-dcd15c0028a4" alt="pairplot" width="900" height="600">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/ffb1f30b-57bc-4b74-9d22-dcd15c0028a4" alt="pairplot">
 </div>
 <p align="center">Figure.7 PairPlots</p>
 
@@ -288,13 +288,13 @@ Our group project aims to help predict the price of Airbnb listings in major US 
 
 #### Feature Importance Plots to gain insights into the significance of different features in our model
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed" alt="Image Description" width="800" height="500">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed" alt="Image Description">
 </div>
 <p align="center">Figure.9 histogram of Feature Importance ranking 1</p>
 
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128" alt="important2_0" width="800" height="500">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128" alt="important2_0">
 </div>
 <p align="center">Figure.10 histogram of Feature Importance ranking 2</p>
 
