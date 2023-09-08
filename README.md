@@ -227,7 +227,74 @@ In the fifth iteration, the training MSE decreases significantly, indicating a v
 ![final](https://github.com/yuygao/ECS171/assets/112483058/2b849a5c-0562-4d2e-8b22-5c1b9ebcbf66)
 
 
-## Final Submission
+# Final Submission
 
-Ⅰ. Introduction
+## Ⅰ. Introduction
 Our group project aims to help predict the price of Airbnb listings in major US cities by building a well-founded prediction model. We are applying several machine learning algorithms to the business market sector and want to see the endless possibilities that come with data-driven decision-making. The research significance of this project is that building a price prediction model will be profitable for many people. For individual hosts and Airbnb platforms, price prediction models increase occupancy and revenue by optimizing the price of listings, improving the user experience, and ensuring they are competitive in the local market. For customers, predictive pricing gives them a quick overview of the cost of accommodation in a specific city and time period, enabling them to budget their travel more efficiently. For the industry, price modeling can be used to understand the dynamics and performance of the AirBnB rental market, and improve data-supported conclusions about the industry's future growth. In this project, we choose to use Airbnb listings in major US cities Dataset on Kaggle. we extracted a subset of 31,876 data records and 20 columns for the following analysis, consisting of 11 categorical variables and 9 numerical variables. We first perform data processing, such as data cleaning and encoding, and then decide whether to normalize the data by performing data visualization to visualize the distribution of the data. Then we  performed Data splitting to divide the data into 80% training data and 20% testing data. We set our predictor(target) variable as "log_price". We first build models on the training data (train.csv) by applying four machine learning approaches, XGBoost, LightGBM (LGBM), Random Forest, and k-NN Algorithm, and run these models on the test data set (test.csv) to compare their prediction accuracies. We will compare the accuracy of these four models to select the model that best predicts the price of a listing.
+
+## Ⅱ. Data Visualization
+
+### Variables summary
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/e9818180-3002-4f2b-b133-d026c1145c39" alt="Column Descriptions" width="700" height="650">
+</div>
+<p align="center">Figure.1 Variables summary table</p>
+
+
+### Five-number Summary Statistics
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/e94eaef4-8e96-45c9-81f9-e6fb1428049e" alt="Five-number Summary Statistics" width="700" height="650">
+</div>
+<p align="center">Figure.2 Five-number Summary Statistics table</p>
+
+### Heatmap
+#### Original Heatmap
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/5ebc51b2-a4b2-479b-96ff-b4f2f0436aa4" alt="Heatmap1" width="600" height="600">
+</div>
+<p align="center">Figure.3 Original Heatmap</p>
+
+#### Heatmap After removing the variables with high correlations
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/199c985e-9fd8-4b6b-86ce-d51dbecf5f8b" alt="Heatmap 2" width="600" height="600">
+</div>
+<p align="center">Figure.4 Heatmap After removing the variables with high correlations</p>
+
+### Histograms
+<p align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/22bad2ec-76f5-424c-9a1f-d1a57a91e144" alt="histogram" width="600" height="600">
+</p>
+<p align="center">Figure.5 Histograms of individual variable data distributions</p>
+
+### Q-Q plot
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/65fc31fa-2d4c-4d0f-840c-e8e861920be4" alt="Image Description" width="800" height="500">
+</div>
+<p align="center">Figure.6 Q-Q plot of checking normal distribution</p>
+
+### PairPlots
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/ffb1f30b-57bc-4b74-9d22-dcd15c0028a4" alt="pairplot" width="900" height="600">
+</div>
+<p align="center">Figure.7 PairPlots</p>
+
+## First model: XGBoost modeling
+### Data Visualization 
+#### Scatter plot of predicted prices vs. actual log_prices
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/5231a2c0-938c-4250-9bfd-118da87dc2f5" alt="Image Title">
+</div>
+<p align="center">Figure.8 Scatter plot of predicted prices vs. actual log_prices</p>
+
+#### Feature Importance Plots to gain insights into the significance of different features in our model
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed" alt="Image Description" width="800" height="500">
+</div>
+<p align="center">Figure.9 histogram of Feature Importance ranking 1</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128" alt="important2_0" width="800" height="500">
+</div>
+<p align="center">Figure.10 histogram of Feature Importance ranking 2</p>
+
