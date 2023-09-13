@@ -230,7 +230,7 @@ In the fifth iteration, the training MSE decreases significantly, indicating a v
 # Final Submission
 
 ## Ⅰ. Introduction
-Our group project aims to help predict the price of Airbnb listings in major US cities by building a well-founded prediction model. We are applying several machine learning algorithms to the business market sector and want to see the endless possibilities that come with data-driven decision-making. The research significance of this project is that building a price prediction model will be profitable for many people. For individual hosts and Airbnb platforms, price prediction models increase occupancy and revenue by optimizing the price of listings, improving the user experience, and ensuring they are competitive in the local market. For customers, predictive pricing gives them a quick overview of the cost of accommodation in a specific city and time period, enabling them to budget their travel more efficiently. For the industry, price modeling can be used to understand the dynamics and performance of the AirBnB rental market, and improve data-supported conclusions about the industry's future growth. In this project, we choose to use Airbnb listings in major US cities Dataset on Kaggle. we extracted a subset of 31,876 data records and 20 columns for the following analysis, consisting of 11 categorical variables and 9 numerical variables. We first perform data processing, such as data cleaning and encoding, and then decide whether to normalize the data by performing data visualization to visualize the distribution of the data. Then we  performed Data splitting to divide the data into 80% training data and 20% testing data. We set our predictor(target) variable as "log_price". We first build models on the training data (train.csv) by applying four machine learning approaches, XGBoost, LightGBM (LGBM), Random Forest, and k-NN Algorithm, and run these models on the test data set (test.csv) to compare their prediction accuracies. We will compare the accuracy of these four models to select the model that best predicts the price of a listing.
+Our group project is focused on predicting Airbnb listing prices in major US cities by building a robust prediction model. We're employing various machine learning algorithms to explore the incredible potential of data-driven decision-making in the business sector. The research significance of this project is that building a price prediction model will be profitable for many people. For individual hosts and Airbnb platforms, our price prediction models enhance occupancy rates and revenue by optimizing listing prices. This not only improves the user experience but also ensures competitiveness in local markets. Travelers benefit from predictive pricing by gaining quick insights into accommodation costs, helping them budget their trips more efficiently. Furthermore, the industry itself can leverage price modeling to gain insights into the dynamics and performance of the Airbnb rental market, leading to more informed conclusions about future growth. To conduct this project, we've turned to the Airbnb listings dataset available on Kaggle, focusing on major US cities. This dataset contains 31,876 records with 20 columns, encompassing 11 categorical and 9 numerical variables. Our analysis begins with essential data processing, including data cleaning and encoding. We then employ data visualization techniques to understand data distributions, guiding our decisions on data normalization. Following data preprocessing, we split the dataset into an 80% training set and a 20% testing set, designating "log_price" as the target variable. Subsequently, we construct predictive models on the training data, employing four machine learning approaches: XGBoost, LightGBM (LGBM), Random Forest, and the k-NN Algorithm. To evaluate these models, we employ various metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). Our model selection is based on a comprehensive comparison of these metrics, ensuring that we choose the most accurate model for predicting listing prices. In summary, our data analysis and machine learning techniques enable us to provide a well-informed solution to a real-world business challenge in the Airbnb market.
 
 ## Ⅱ. Data Visualization
 
@@ -291,10 +291,125 @@ Our group project aims to help predict the price of Airbnb listings in major US 
   <img src="https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed" alt="Image Description">
 </div>
 <p align="center">Figure.9 histogram of Feature Importance ranking 1</p>
+<div align="center">
+
+<img src="https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128" alt="important2_0">
+</div>
+<p align="center">Figure.10 histogram of Feature Importance ranking 2</p>
+
+## Ⅳ. Results
+We will focus our attention on four different models: Random Forest, XGBoost, LGBM, and k-NN. Within the scope of these four modeling approaches, we identify seven essential components:
+
+#### 1. Randomized Hyperparameter Search: 
+This phase encompasses an extensive exploration of hyperparameter options, ensuring a comprehensive search for optimal settings.
+#### 2. Grid Hyperparameter Search: 
+Following the initial exploration, we conduct a targeted search to pinpoint the most effective hyperparameters.
+#### 3. Metric Visualization: 
+To evaluate model performance, we employ visualizations of key metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R2) in relation to the number of estimators.
+#### 4. Scatter Plot Analysis: 
+Utilizing scatter plots, we visually compare predicted prices against actual prices, offering valuable insights into model accuracy.
+#### 5. Feature Selection Techniques: 
+We apply feature selection methods to identify and leverage the most pertinent features, thereby enhancing the predictive capabilities of our models.
+#### 6. Learning Curve Analysis: 
+Learning curves aid in comprehending how model performance evolves with increasing training data, shedding light on potential areas for improvement.
+#### 7. Validation Curve Analysis: 
+Validation curves play a crucial role in fine-tuning hyperparameters and assessing their impact on overall model performance.
+These seven components contribute to a comprehensive evaluation and optimization of our four modeling approaches, ensuring we effectively utilize the full potential of each model while optimizing feature selection to improve results.
+
+---
+### Random Forest - as a baseline model
+<center>
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/4d048901-0d7e-40fb-82ba-8789421f22c3" alt="Your Image">
+</center>
+<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+
+<div style="text-align: center;">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/efa9a95a-9cbe-40e9-ac47-3e647b924998" alt="Your Image Alt Text">
+</div>
+<p align="center">Figure. Table of Metric Visualization</p>
 
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128" alt="important2_0">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/13a5ff0a-8e61-4d96-921c-57463d28b184" alt="Image Description" />
 </div>
-<p align="center">Figure.10 histogram of Feature Importance ranking 2</p>
+<p align="center">Figure. Scatter Plot Training Values vs. Test Values</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/4b9aa244-1c0f-45f6-915e-7f56427cc46f" alt="Your Image Description">
+</div>
+<p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/13a5ff0a-8e61-4d96-921c-57463d28b184" alt="Image Alt Text">
+</div>
+<p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/f6a70213-f7aa-4e55-97e4-6f884297ff01" alt="Image Description">
+</div>
+<p align="center">Figure. histogram of Random Forest Feature Importance ranking</p>
+
+<div style="text-align:center;">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/3328f348-46b8-433c-86a1-8245f2bddfe0" alt="Image Alt Text">
+</div>
+<p align="center">Figure. Learning Curve </p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/86a8b108-1984-4c30-97a1-79a257a02510" alt="Image Alt Text">
+</div>
+<p align="center">Figure. Validation Curve </p>
+
+---
+### XGBoost
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/4ffa4fb9-a903-4f3f-80b4-ba05c8171ac8" alt="Image Description">
+</div>
+<p align="center">Figure. Table of XGBoost RandomizedSearchCV and GridSearchCV</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/25b13bcd-7291-462c-be06-c4b90806d5da" alt="Image Description">
+</div>
+<p align="center">Figure. Table of Metric Visualization</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/4b8ca132-49fd-47bb-bfca-aa77a0f34b1c" alt="Your Image Description">
+</div>
+<p align="center">Figure. Scatter Plot Training Values vs. Test Values</p>
+
+
+<p align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/15e8508b-1312-45c5-814b-60328ed1dd59" alt="Your Image Alt Text">
+</p>
+<p align="center">Figure. Learning Curve </p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/4536053a-fcb9-4c42-961f-f56594df3466" alt="Image Alt Text">
+</div>
+<p align="center">Figure. histogram of XGBoost Feature Importance ranking</p>
+
+<div style="text-align:center;">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/62a5700c-fc3a-41a8-b34f-b31c6857b62e" alt="Your Image Description">
+</div>
+<p align="center">Figure. Validation Curve </p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114623522/35da47a9-5575-4299-a3a4-ba0c166edcfd" alt="Your Image Alt Text">
+</div>
+<p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
+
+---
+### LightGBM
+
+
+
+
+
+
+
+
+
+
+
+
 
