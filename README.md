@@ -405,32 +405,12 @@ These seven components contribute to a comprehensive evaluation and optimization
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/0e98b03a-7742-4dcf-81d9-5f57c857eb38" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter Plot Training Values vs. Test Values</p>
+<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/9b9fc65c-de6b-4c5f-a3d3-e9bb451cec48" alt="Your Image Description">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/f89cd6ad-beed-46c3-a285-e06da6c97a13" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
-
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/13a5ff0a-8e61-4d96-921c-57463d28b184" alt="Image Alt Text">
-</div>
-<p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
-
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/f6a70213-f7aa-4e55-97e4-6f884297ff01" alt="Image Description">
-</div>
-<p align="center">Figure. histogram of Random Forest Feature Importance ranking</p>
-
-<div style="text-align:center;">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/3328f348-46b8-433c-86a1-8245f2bddfe0" alt="Image Alt Text">
-</div>
-<p align="center">Figure. Learning Curve </p>
-
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/86a8b108-1984-4c30-97a1-79a257a02510" alt="Image Alt Text">
-</div>
-<p align="center">Figure. Validation Curve </p>
+<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
 
 ---
 ### XGBoost
