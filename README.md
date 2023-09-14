@@ -392,12 +392,12 @@ These seven components contribute to a comprehensive evaluation and optimization
 ---
 ### Random Forest - as a baseline model
 <center>
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/4d048901-0d7e-40fb-82ba-8789421f22c3" alt="Your Image">
+  <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/ddb6d867-15ad-4516-aefb-d78c6f6fe821">
 </center>
 <p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/efa9a95a-9cbe-40e9-ac47-3e647b924998" alt="Your Image Alt Text">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/6f52e04d-e21c-4c21-bc9b-0ebc91b7ab76" alt="Your Image Alt Text">
 </div>
 <p align="center">Figure. Table of Metric Visualization</p>
 
