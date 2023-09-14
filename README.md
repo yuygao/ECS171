@@ -452,6 +452,7 @@ We also introduced the k-NN algorithm into our model selection for specific purp
 
 In summary, our model selection strategy combines the robustness and predictive power of ensemble models with the simplicity and interpretability of k-NN to comprehensively address the regression tasks of predicting Airbnb listing prices.
 
+---
 **Preparing the Dataset for Modeling:**
 First, we cleaned up and encoded the data to get it ready for analysis. Then, we took a crucial step by normalizing the data. This was done to ensure that the scales of our features were consistent across all models. We believed this would help our models converge better and boost their predictive accuracy. As a result, we proceeded with the normalized dataset in the following sections, which we labeled as "normalized_data_merged" in the code.
 
@@ -461,6 +462,7 @@ To fine-tune our models, we adopted a two-step approach. We employed random sear
 **Results and Interpretation:**
 In this section, we will discuss the results from each model: Random Forest, XGBoost, LGBM, and KNN. The results of our modeling showed different levels of predictive accuracy for each model. We'll proceed to analyze these results individually.
 
+---
 **Random Forest as a baseline model:**
 
 We employed a Random Forest model as our baseline to prevent overfitting and enhance generalization for predicting the 'price' target variable, splitting the dataset into 80% training and 20% testing sets. Utilizing RandomizedSearchCV, we explored a wide range of hyperparameters and identified the best parameters, subsequently fine-tuning them with GridSearchCV to construct our final Random Forest model. We evaluated its performance on the test dataset using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). This evaluation process is critical to assess whether the model has good generalization or shows signs of overfitting (performing exceptionally well on training data but poorly on test data).
@@ -473,6 +475,7 @@ Moreover, when we examined the plot comparing predicted prices to actual prices,
 
 Finally, in our analysis of feature importance, we observed that the top three significant features affecting price were room type, bathrooms, and city. These observations provide useful information about the factors influencing the 'price' target variable and can guide further model refinement or decision-making.
 
+---
 **XGBoost:**
 
 We used an XGBoost model to predict the 'price' target variable. We divided the data into an 80% training set and a 20% testing set. We searched for the best model parameters using RandomizedSearchCV and GridSearchCV.
@@ -489,7 +492,7 @@ Furthermore, when we looked at the plot comparing predicted prices to actual pri
 
 In summary, we successfully used an XGBoost model with carefully tuned parameters to avoid overfitting and achieve strong generalization. The model performed excellently on both training and testing data, indicating its effectiveness in capturing the underlying dataset patterns.
 
-
+---
 **LightGBM (LGBM):**
 
 We employed a LightGBM model to predict the 'price' target variable, dividing our dataset into an 80% training set and a 20% testing set. To find the best model parameters, we conducted both RandomizedSearchCV and GridSearchCV.
@@ -507,7 +510,7 @@ Furthermore, when inspecting the plot comparing predicted prices to actual price
 In summary, we successfully harnessed a LightGBM model with finely-tuned parameters to avoid overfitting and achieve robust generalization. The model performed exceptionally well on both training and testing data, underscoring its efficacy in capturing underlying dataset patterns.
 
 
-
+---
 **K-Nearest Neighbors (k-NN) Algorithm:**
 
 We choose to perform a K-NN algorithm since it’s a non-parametric method and it’s suitable for
@@ -523,7 +526,7 @@ Additionally, our visual analysis of the initial 10 iterations of MSE, MAE, RMSE
 
 Further exploring our model's predictive prowess, the plot comparing predicted prices to actual prices demonstrated a remarkable alignment of data points with the residual line. This underscored the fact that our model's predictions closely mirrored actual prices, highlighting its proficiency in capturing underlying data patterns. Meanwhile, our learning curve demonstrated the gradual convergence of training and test Mean Squared Error (MSE) lines, emphasizing the model's learning process and its enhanced predictive capabilities on unseen data. In our examination of feature importance, we identified the three most influential features affecting price: room type, city, and property type.
 
-
+---
 **Confidence in the Results:**
 We have confidence in the results due to the data preparation, hyperparameter fine-tuning, and model selection process. The inclusion of cross-validation and comprehensive evaluation metrics guaranteed a thorough assessment of the models' performance.
 
