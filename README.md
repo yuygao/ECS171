@@ -366,7 +366,7 @@ This table shows us the chosen variables, excluding those that have strong corre
 **Methods section:**
 The method section will include Initial Preprocessing, Data Exploration and Analysis, Data preprocessing, and Preparing for Model Building. 
 
-**Initial Preprocessing：**
+**[Initial Preprocessing](https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb)：** 
 To understand our dataset and prepare it for modification, we follow these steps:
  - Data Overview:
     - Load Dataset: Load the raw dataset.
