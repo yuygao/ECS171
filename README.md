@@ -1,7 +1,28 @@
 # ECS171
 Install Library
 ```ruby
-!pip3 install xgboost
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from scipy import stats
+from sklearn import metrics
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder, MinMaxScaler
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
+from sklearn.linear_model import LinearRegression, LogisticRegression, Ridge
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+import xgboost as xgb
+from sklearn.metrics import accuracy_score, classification_report, mean_squared_error, precision_score, recall_score, mean_absolute_error, r2_score
+from sklearn.metrics import confusion_matrix, roc_curve, auc
+from xgboost import XGBRegressor
+from statsmodels.regression.linear_model import OLS
+from statsmodels.tools import add_constant
+from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
+from scipy.stats import uniform, randint
+from sklearn.ensemble import RandomForestRegressor
+from math import sqrt
+from sklearn.model_selection import learning_curve, validation_curve
 ```
 Set Up Coding Environment
 ```ruby
