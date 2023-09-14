@@ -229,10 +229,10 @@ In the fifth iteration, the training MSE decreases significantly, indicating a v
 
 # Final Submission
 
-## Ⅰ. Introduction
+## Part A. Introduction
 Our group project is focused on predicting Airbnb listing prices in major US cities by building a robust prediction model. We're employing various machine learning algorithms to explore the incredible potential of data-driven decision-making in the business sector. The research significance of this project is that building a price prediction model will be profitable for many people. For individual hosts and Airbnb platforms, our price prediction models enhance occupancy rates and revenue by optimizing listing prices. This not only improves the user experience but also ensures competitiveness in local markets. Travelers benefit from predictive pricing by gaining quick insights into accommodation costs, helping them budget their trips more efficiently. Furthermore, the industry itself can leverage price modeling to gain insights into the dynamics and performance of the Airbnb rental market, leading to more informed conclusions about future growth. To conduct this project, we've turned to the Airbnb listings dataset available on Kaggle, focusing on major US cities. This dataset contains 31,876 records with 20 columns, encompassing 11 categorical and 9 numerical variables. Our analysis begins with essential data processing, including data cleaning and encoding. We then employ data visualization techniques to understand data distributions, guiding our decisions on data normalization. Following data preprocessing, we split the dataset into an 80% training set and a 20% testing set, designating "log_price" as the target variable. Subsequently, we construct predictive models on the training data, employing four machine learning approaches: XGBoost, LightGBM (LGBM), Random Forest, and the k-NN Algorithm. To evaluate these models, we employ various metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). Our model selection is based on a comprehensive comparison of these metrics, ensuring that we choose the most accurate model for predicting listing prices. In summary, our data analysis and machine learning techniques enable us to provide a well-informed solution to a real-world business challenge in the Airbnb market.
 
-## Ⅱ. Data Visualization
+## Part B. Data Visualization
 
 ### Variables summary
 
@@ -300,7 +300,12 @@ This table shows us the chosen variables, excluding those that have strong corre
 </div>
 <p align="center">Figure.10 histogram of Feature Importance ranking 2</p>
 
-## Ⅳ. Results
+---
+## Part C. Methods section 
+
+
+---
+## Part D. Results section
 We will focus our attention on four different models: Random Forest, XGBoost, LGBM, and k-NN. Within the scope of these four modeling approaches, we identify seven essential components:
 
 **1. Randomized Hyperparameter Search:**
@@ -409,6 +414,127 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 ---
 ### LightGBM
+
+---
+## Part E. Discussion section
+
+In this discussion, we're going to break down our Airbnb listing price predictive modeling project into different parts. We'll explore the rationale behind our choices, interpret the results, and outline our thought process from start to finish. Furthermore, we'll take a close look at the quality of our results and recognize any areas where we may have fallen short.
+
+**Choice of Models:**
+
+We began our project by selecting four machine learning models: Random Forest, XGBoost, LightGBM (LGBM), and k-NN. Our rationale for this choice was to explore diverse modeling approaches to address the complex nature of predicting Airbnb listing prices. Each of these models had its own distinct advantages, and we're going to break down why we went with them into three important parts.
+
+**1. Why Random Forest as a Baseline Model, Not Decision Tree or Linear Regression:**
+
+We selected for Random Forest as our baseline model over Decision Trees or Linear Regression for several compelling reasons:
+
+- Overfitting Reduction and Higher Predictive Accuracy: Random Forest helps us prevent overfitting, which is essentially when our model fits the training data too closely and struggles to generalize to new, unseen data. This is especially important in the context of predicting Airbnb listing prices, as we're dealing with a lot of variables and complex relationships. Random Forest generally gives us more accurate predictions compared to a single Decision Tree. It does this by combining the predictions from multiple trees, which helps us avoid making predictions that are biased or overly complicated. This is a huge advantage when you consider the factors that can influence Airbnb listing prices.
+  
+- Non-Linear Flexibility: Random Forest doesn't make assumptions about the data having a linear relationship between its features (like Linear Regression does). This is important because not all real-world datasets, including Airbnb listings, follow these linear patterns. Random Forest's ability to capture nonlinear relationships is a significant advantage in such cases.
+  
+- Feature Importance: Random Forest could identify the variables with the most significant impact on price predictions. This feature is useful for gaining deeper understanding into the factors that influence listing prices.
+
+** 2. Ensemble Models (XGBoost, LGBM, Random Forest):**
+
+We decided to include ensemble models, namely XGBoost, LGBM, and Random Forest, for several compelling reasons:
+
+- Robustness: Ensemble models are known for their robustness. They can handle tricky stuff like complex, not-so-straightforward connections in the data, even when there's noise (data that doesn't quite fit) and outliers (data that's really different). When we're trying to predict Airbnb listing prices, where there's a ton of data going on at once, having models that can handle all this mess is useful.
+  
+- Feature Importance Insights: Ensemble models could help us identify feature importance. In our case, they show us which parts of our data have the most impact on predicting prices. This helps us make smart decisions based on the data and understand how prices work better.
+
+** 3. k-NN Algorithm:**
+
+We also introduced the k-NN algorithm into our model selection for specific purposes:
+
+- Simplicity: k-NN is relatively straightforward to implement and understand. It serves as a starting point for us to figure out how much we can predict just by looking at similar nearby listings.
+  
+- Interpretability: k-NN offers a high level of interpretability. Predictions are based on the prices of the nearest neighbors, making it easy to explain why a particular price prediction was made.  
+
+In summary, our model selection strategy combines the robustness and predictive power of ensemble models with the simplicity and interpretability of k-NN to comprehensively address the regression tasks of predicting Airbnb listing prices.
+
+**Preparing the Dataset for Modeling:**
+First, we cleaned up and encoded the data to get it ready for analysis. Then, we took a crucial step by normalizing the data. This was done to ensure that the scales of our features were consistent across all models. We believed this would help our models converge better and boost their predictive accuracy. As a result, we proceeded with the normalized dataset in the following sections, which we labeled as "normalized_data_merged" in the code.
+
+**Hyperparameter Tuning Strategy:**
+To fine-tune our models, we adopted a two-step approach. We employed random search for initial exploration of hyperparameters, followed by grid search for fine-tuning. Random search allowed us to efficiently explore a broad range of hyperparameters, while grid search refined the best-performing combinations. We believed this two-step approach balanced efficiency with optimization in our hyperparameter tuning process..
+
+**Results and Interpretation:**
+In this section, we will discuss the results from each model: Random Forest, XGBoost, LGBM, and KNN. The results of our modeling showed different levels of predictive accuracy for each model. We'll proceed to analyze these results individually.
+
+**Random Forest as a baseline model:**
+
+We employed a Random Forest model as our baseline to prevent overfitting and enhance generalization for predicting the 'price' target variable, splitting the dataset into 80% training and 20% testing sets. Utilizing RandomizedSearchCV, we explored a wide range of hyperparameters and identified the best parameters, subsequently fine-tuning them with GridSearchCV to construct our final Random Forest model. We evaluated its performance on the test dataset using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). This evaluation process is critical to assess whether the model has good generalization or shows signs of overfitting (performing exceptionally well on training data but poorly on test data).
+
+Our initial parameter grid spanned n_estimators (ranging from 100 to 1000), max_depth (ranging from 3 to 10), and min_samples_split (ranging from 2 to 10). After Randomized Search, we found the optimal parameters to be 400 estimators, a minimum sample split of 2, and a maximum depth of 8. Grid Search further refined these values to 450 estimators, a minimum sample split of 2, and a maximum depth of 9. 
+
+With these carefully selected parameters, we constructed our final Random Forest model, which exhibited impressive results when tested on the dataset. This included an MSE of 0.170, MAE of 0.317, RMSE of 0.412, and an R^2 of 0.636. On the training set, we observed an MSE of 0.142, MAE of 0.292, RMSE of 0.377, and an R^2 of 0.689. These metrics not only indicated the prevention of overfitting but also demonstrated the model's strong generalization to new data. Additionally, our visualization of the first 10 iterations of MSE, MAE, RMSE, and R^2 showed consistent trends between the training and test metrics. In this case, the testing line exceeded the training line for MSE, MAE, and RMSE, while for R^2, the testing line was below the training line. These observations highlight our model's effective ability to generalize.
+
+Moreover, when we examined the plot comparing predicted prices to actual prices, we noticed that most data points clustered around the residual line. This clustering indicated a strong alignment between our model's predictions and the true prices, a positive sign that our model effectively captured the underlying data patterns. Our learning curve also displayed converging behavior, progressively reducing the gap between the training and test Mean Squared Error (MSE) lines from left to right. This convergence signified that our model was learning from the training data and improving its predictive abilities on unseen data, another positive outcome. 
+
+Finally, in our analysis of feature importance, we observed that the top three significant features affecting price were room type, bathrooms, and city. These observations provide useful information about the factors influencing the 'price' target variable and can guide further model refinement or decision-making.
+
+**XGBoost:**
+
+We used an XGBoost model to predict the 'price' target variable. We divided the data into an 80% training set and a 20% testing set. We searched for the best model parameters using RandomizedSearchCV and GridSearchCV.
+
+Initially, we explored a range of parameters like the number of estimators (from 100 to 1000), maximum depth (from 3 to 10), and learning rate (from 0.01 to 0.3). After Randomized Search, we found the best parameters to be 121 estimators, a learning rate of 0.195, and a maximum depth of 4. Grid Search further improved these values to 171 estimators, a learning rate of 0.145, and a maximum depth of 4.
+
+With these chosen parameters, we built our final XGBoost model, which performed well when tested on the dataset. We measured its performance using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2).
+
+On the testing set, our XGBoost model achieved an MSE of 0.165, MAE of 0.314, RMSE of 0.407, and an R^2 of 0.645. On the training set, we observed an MSE of 0.146, MAE of 0.294, RMSE of 0.382, and an R^2 of 0.680. These metrics indicated that the model didn't overfit and could generalize well to new data.
+
+We also visualized the first 10 iterations of MSE, MAE, RMSE, and R^2, which showed consistent trends between training and test metrics. MSE, MAE, and RMSE were slightly higher on the test set, while R^2 was slightly lower. This suggested the model's ability to generalize effectively.
+
+Furthermore, when we looked at the plot comparing predicted prices to actual prices, we noticed that most data points were close to the residual line. This indicated that our model's predictions aligned well with actual prices, showing that it captured the data patterns effectively. Our learning curve showed that the training and test Mean Squared Error (MSE) lines gradually converged, demonstrating the model's learning and improved predictive abilities on unseen data.  In our analysis of feature importance, we observed that the top three significant features affecting price were room type, bathrooms, and bedrooms. 
+
+In summary, we successfully used an XGBoost model with carefully tuned parameters to avoid overfitting and achieve strong generalization. The model performed excellently on both training and testing data, indicating its effectiveness in capturing the underlying dataset patterns.
+
+
+**LightGBM (LGBM):**
+
+We employed a LightGBM model to predict the 'price' target variable, dividing our dataset into an 80% training set and a 20% testing set. To find the best model parameters, we conducted both RandomizedSearchCV and GridSearchCV.
+
+Initially, we explored a range of parameters, including the number of estimators (ranging from 100 to 1000), maximum depth (from 3 to 14), subsample, colsample_bytree (ranging from 0.6 to 1.0 with 5 evenly spaced values), and learning rate (ranging from 0.01 to 0.3 with 30 evenly spaced values). After Randomized Search, we identified the best parameters as follows: 300 estimators, a learning rate of 0.020, a maximum depth of 8, and subsample and colsample_bytree set at 0.60. Subsequently, Grid Search further fine-tuned these values, resulting in 250 estimators, a learning rate of 0.07, a maximum depth of 9, and subsample and colsample_bytree at 0.55.
+
+With these chosen parameters, we constructed our final LightGBM model, which performed admirably during testing. To assess its performance, we utilized metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2).
+
+On the testing set, our LightGBM model achieved an MSE of 0.165, MAE of 0.313, RMSE of 0.406, and an R^2 of 0.647. For the training set, we observed an MSE of 0.139, MAE of 0.287, RMSE of 0.373, and an R^2 of 0.695. These metrics indicated that the model avoided overfitting and demonstrated strong generalization to new data.
+
+We also visually analyzed the first 10 iterations of MSE, MAE, RMSE, and R^2, revealing consistent trends between training and test metrics. MSE, MAE, and RMSE were slightly higher on the test set, while R^2 was slightly lower. This suggested that the model's ability to generalize effectively.
+
+Furthermore, when inspecting the plot comparing predicted prices to actual prices, we noticed that most data points closely followed the residual line. This indicated that our model's predictions aligned well with actual prices, showing its effective capture of data patterns. Our learning curve displayed the gradual convergence of the training and test Mean Squared Error (MSE) lines, illustrating the model's learning and improved predictive abilities on unseen data. In our analysis of feature importance, we identified the top three significant features affecting price: the number of reviews, review scores rating, and city.
+
+In summary, we successfully harnessed a LightGBM model with finely-tuned parameters to avoid overfitting and achieve robust generalization. The model performed exceptionally well on both training and testing data, underscoring its efficacy in capturing underlying dataset patterns.
+
+
+
+**K-Nearest Neighbors (k-NN) Algorithm:**
+
+We choose to perform a K-NN algorithm since it’s a non-parametric method and it’s suitable for
+regression and predictions. We began by selecting 'price' as our target variable and splitting the dataset into a training set and a testing set (80:20 ratio). Our approach involved finding the best regression model using KNN, fine-tuning its hyperparameters, assessing its performance, and visualizing the results.
+
+To begin, we preprocessed the data, divided it into training and testing sets, and conducted a RandomizedSearchCV to pinpoint the optimal hyperparameters for the KNN regressor. These hyperparameters included the number of neighbors (k), the distance metric, and the algorithm used. Subsequently, we evaluated the KNN model's performance on the test dataset, providing metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R-squared (R^2).
+
+During the hyperparameter search, we explored various options, including different weight schemes ('uniform' and 'distance'), the number of neighbors ranging from 1 to 21, and algorithm choices ('auto', 'ball_tree', 'kd_tree', 'brute'). After Randomized Search, we identified the best configuration as using uniform weight, 11 neighbors, and the kd_tree algorithm. Further refinement through Grid Search resulted in uniform weight, 11 neighbors, and the ball_tree algorithm.
+
+When it came to evaluating our KNN model's performance, we discovered that on the testing set, it achieved an MSE of 0.206, MAE of 0.346, RMSE of 0.454, and an R^2 of 0.558. For the training set, the model exhibited an MSE of 0.161, MAE of 0.307, RMSE of 0.402, and an R^2 of 0.647. These metrics provided evidence that the model avoided overfitting and showcased robust generalization to new data.
+
+Additionally, our visual analysis of the initial 10 iterations of MSE, MAE, RMSE, and R^2 revealed consistent patterns between training and test metrics. Although the test set displayed slightly elevated MSE, MAE, and RMSE values, along with a slightly lower R^2, it indicated that the model effectively extended its learning to new data.
+
+Further exploring our model's predictive prowess, the plot comparing predicted prices to actual prices demonstrated a remarkable alignment of data points with the residual line. This underscored the fact that our model's predictions closely mirrored actual prices, highlighting its proficiency in capturing underlying data patterns. Meanwhile, our learning curve demonstrated the gradual convergence of training and test Mean Squared Error (MSE) lines, emphasizing the model's learning process and its enhanced predictive capabilities on unseen data. In our examination of feature importance, we identified the three most influential features affecting price: room type, city, and property type.
+
+
+**Confidence in the Results:**
+We have confidence in the results due to the data preparation, hyperparameter fine-tuning, and model selection process. The inclusion of cross-validation and comprehensive evaluation metrics guaranteed a thorough assessment of the models' performance.
+
+**Shortcomings and Future Considerations:**
+While our project has provided a wide range of ways to predict Airbnb listing prices, it's essential to recognize its limitations and areas for potential improvement. Firstly, the accuracy of our findings relies on the quality of the data we had access to. To make our predictions even more reliable, we can work on improving how we gather data and make sure it's free from any biases. Secondly, we can consider adding more features or using advanced methods to make our models perform even better. For example, think about adding features like nearby attractions or public transport accessibility. Thirdly, although we tried different models, there are even more advanced techniques like neural networks that we can explore in the future to make our predictions even more accurate. Lastly, we didn't account for time-related changes in our analysis. To understand pricing trends better, we can use time series analysis, which looks at how prices change over time, like when prices tend to be higher or lower during certain seasons. 
+
+---
+## Part F: Conclusion section:
+
+After a thorough analysis of our modeling results, it's clear that the LightGBM (LGBM) model stands out as the most effective choice for predicting Airbnb listing prices. While we began with the Random Forest model as a baseline, LGBM consistently outperformed it in predictive accuracy. LGBM consistently achieved lower MSE, RMSE, and higher R^2 values on both training and testing sets. Similarly, although the XGBoost model is powerful, it couldn't match LGBM's predictive power, as LGBM consistently achieved lower MSE and RMSE values, indicating greater pattern-capturing ability. Turning to the K-Nearest Neighbors (KNN) algorithm, LGBM once again excelled in predictive accuracy. With lower MSE, RMSE, and better R^2 values on the testing set, LGBM proved its capacity to generalize effectively. Overall, LGBM consistently outperformed other models, avoiding overfitting and demonstrating robust generalization to new data. Its performance across various evaluation metrics makes it the preferred choice for predicting Airbnb listing prices. In summary, due to its consistent and excellent performance, characterized by lower MSE, RMSE, and higher R^2 values, LightGBM (LGBM) is a reasonable choice for predicting Airbnb listing prices. However, there are areas for improvement and future exploration, such as enhancing data quality, exploring additional features, considering more advanced techniques like neural networks, and incorporating temporal analysis to better understand pricing trends over time. In this way, we could do predictive modeling on the real-time dynamics of Airbnb listings prices to provide more valuable insights for hosts and travelers.
+
 
 
 
