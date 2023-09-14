@@ -323,7 +323,21 @@ This section covers data preprocessing and includes the following steps:
 ![8](https://github.com/yuygao/ECS171/assets/112483058/72fbe0cb-880b-48e8-90b0-3c644974f746)
 
  - Removal of Highly Correlated Variables:
-    - We identify and drop any columns th
+    - We identify and drop any columns that exhibit correlations greater than 0.7.
+    - This step helps us determine which features are most relevant to our problem through correlation analysis.
+    - correlation matrix (after remove):
+![9](https://github.com/yuygao/ECS171/assets/112483058/cea77673-91fc-40f2-900f-f741f3d811e5)
+
+Data Transformation:
+ - Label Encoding for Categorical Variables:
+   - We perform label encoding for categorical variables, which includes hardcoding for variables such as property_type, room_type, bed_type, cancellation_policy, and city.
+   - We apply label encoding using a label encoder for host_identity_verified, instant_bookable, and cleaning_fee.
+ - Combining Dataset with Categorical and Numerical Data
+ - Normalization Using StandardScaler:
+    - We normalize the data using the StandardScaler() method. 
+    - Additionally, we conduct a histogram plot to test for data normality. 
+
+
 
 ---
 ## Part D. Results section
