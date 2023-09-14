@@ -476,7 +476,7 @@ These seven components contribute to a comprehensive evaluation and optimization
 <p align="center">Figure. Learning Curve</p>
 
  <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/c8345537-2121-4aea-a157-3525d1cd23e6)" alt="Image Description" />
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/c8345537-2121-4aea-a157-3525d1cd23e6" alt="Image Description" />
 </div>
 <p align="center">Figure. Validation Curve</p>
 
@@ -557,6 +557,49 @@ These seven components contribute to a comprehensive evaluation and optimization
   <img src="https://github.com/yuygao/ECS171/assets/112483058/32b17496-0220-4120-b735-6bf800e814b1" alt="Image Description" />
 </div>
 <p align="center">Figure. Learning Curve</p>
+
+
+
+---
+### k-NN Algorithm (KNN)
+<center>
+  <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/03786470-b442-4cb7-98da-290369359b88">
+</center>
+<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+
+<div style="text-align: center;">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/c21d8d07-4dee-4df5-b33c-efd44e3ef75e" alt="Your Image Alt Text">
+</div>
+<p align="center">Figure. Table of Metric Visualization</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/b56213a1-16a7-4082-8e07-22911c4aefec" alt="Image Description" />
+</div>
+<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/ce6cff34-0c4d-40d3-89a8-d7fb650b48a3" alt="Image Description" />
+</div>
+<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/43c6a7fa-195e-435c-b1f0-dd65d94b16e7" alt="Image Description" />
+</div>
+<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/d2197ea3-c627-434e-aaf9-e5d66e79b132" alt="Image Description" />
+</div>
+<p align="center">Figure. Learning Curve</p>
+
+ <div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/c22ac14d-d637-4a2d-ab76-e177d04eaebc" alt="Image Description" />
+</div>
+<p align="center">Figure. MSE, R-squared vs. Model Complexity</p>
+
 
 ---
 ## Part E. Discussion section
