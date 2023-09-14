@@ -370,6 +370,7 @@ Drop a specific column which is greater than a threshold (0.7) and unneccessary 
 The method section will include Initial Preprocessing, Data Exploration and Analysis, Data preprocessing, and Preparing for Model Building. 
 
 **[Initial Preprocessing](https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb)：** 
+
 To understand our dataset and prepare it for modification, we follow these steps:
  - Data Overview:
     - Load Dataset: Load the raw dataset.
@@ -383,12 +384,14 @@ To understand our dataset and prepare it for modification, we follow these steps
 In our initial preprocessing step, we began by examining the raw dataset for missing or duplicate values. We found that our dataset does not contain any missing values. Therefore, there is no need to drop or replace null values with means, medians, or other values.
 
 **Data Exploration and Analysis:**
+
 In this step, we include the following steps:
  - Original Data Exploration and Analysis (EDA)
     - Identify the Types of Columns in the Original Dataset: This involves categorizing columns as either Categorical or Numerical.
     - Basic Statistics of Original Data: We display basic statistics using the describe() function.
 
 **Data preprocessing:**
+
 This section covers data preprocessing and includes the following steps:
  - Correlation Analysis of the Original Dataset:
    - Prior to removing variables with high correlations, we conduct a correlation analysis.
@@ -412,11 +415,6 @@ Data Transformation:
    - We apply label encoding using a label encoder for host_identity_verified, instant_bookable, and cleaning_fee.
  - Combining Dataset with Categorical and Numerical Data
  - Standardization Using StandardScaler:
-    - We normalize the data using the StandardScaler() method. 
-    - Additionally, we conduct a histogram plot to test for data normality. 
-![10](https://github.com/yuygao/ECS171/assets/112483058/fd6e619c-d6bd-4e7e-a786-a1fa36e6a5af)
-<p align="center">Figure.18  Histogram of checking data normality by using StandardScaler</p>
-
 ```ruby
 # Initialize scalers
 standard_scaler = StandardScaler()
@@ -427,13 +425,14 @@ standardized_df = pd.DataFrame(standardized_data, columns=numerical_columns)
 print("\nStandardized Data:")
 standardized_df.max()
 ```
+    - We normalize the data using the StandardScaler() method. 
+    - Additionally, we conduct a histogram plot to test for data normality. 
+![10](https://github.com/yuygao/ECS171/assets/112483058/fd6e619c-d6bd-4e7e-a786-a1fa36e6a5af)
+<p align="center">Figure.18  Histogram of checking data normality by using StandardScaler</p>
+
+
 
  - Normalization Using MinMaxScaler:
-    - We normalize the data using the MinMaxScaler() method.
-    - A histogram plot is used to test for data normality.
-![11](https://github.com/yuygao/ECS171/assets/112483058/917247e9-7085-4b04-9cd6-3084f9bd8c8d)
-<p align="center">Figure.19  Histogram of checking data normality by using MinMaxScaler</p>
-
 ```ruby
 # Initialize scalers
 min_max_scaler = MinMaxScaler()
@@ -445,6 +444,11 @@ normalized_df = pd.DataFrame(normalized_data, columns=numerical_columns)
 print("Normalized Data:")
 normalized_df
 ```
+    - We normalize the data using the MinMaxScaler() method.
+    - A histogram plot is used to test for data normality.
+![11](https://github.com/yuygao/ECS171/assets/112483058/917247e9-7085-4b04-9cd6-3084f9bd8c8d)
+<p align="center">Figure.19  Histogram of checking data normality by using MinMaxScaler</p>
+
 
 
  - Log Transformation of "Price":
