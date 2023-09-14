@@ -278,6 +278,9 @@ This table shows us the chosen variables, excluding those that have strong corre
 <p align="center">Figure.3 Original Heatmap</p>
 
 #### Heatmap After removing the variables with high correlations
+
+Drop a specific column which is greater than a threshold (0.7) and unneccessary variables 
+
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/199c985e-9fd8-4b6b-86ce-d51dbecf5f8b" alt="Heatmap 2">
 </div>
