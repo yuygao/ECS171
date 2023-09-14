@@ -541,6 +541,8 @@ After a thorough analysis of our modeling results, it's clear that the LightGBM 
 ---
 ## Part G. Collaboration
 
+<img width="705" alt="Screenshot 2023-09-13 at 8 41 20 PM" src="https://github.com/yuygao/ECS171/assets/114432520/da5688f8-8aa3-4eb9-ab44-c5e8acc4a425">
+
 There are four of us in our group, Yuanyuan Gao, Yonglin Liang, Wenhui Li, and Yayue Song. We all work as a team and everyone is responsible for a different part. Yuanyuan Gao is our group leader, who was mainly responsible for coordinating everyone's time, setting deadlines and the part of building Random Forest, and LightGBM and analyzing them separately. Wenhui Li is our group coding, who is mainly responsible for building XGBoost and KNN models and doing the model analysis. Yonglin Liang is our group coding, who is mainly responsible for data processing  and data visualization. Yayue Song is our group writer, who was mainly responsible for plot formatting and report writing.
 
 
