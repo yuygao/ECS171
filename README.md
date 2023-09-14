@@ -542,6 +542,10 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 
 <div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114432520/127a1074-bbdf-4322-be1d-9e5773182a3d" alt="Image Description" />
+</div>
+
+<div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/0e98b03a-7742-4dcf-81d9-5f57c857eb38" alt="Image Description" />
 </div>
 <p align="center">Figure.22 Change in MSE, MAE, RMSE, R2</p>
