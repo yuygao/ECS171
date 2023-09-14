@@ -525,6 +525,39 @@ These seven components contribute to a comprehensive evaluation and optimization
 ---
 ### LightGBM
 
+<center>
+  <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/789bdad4-e8f7-47ab-97d4-22decc7f006f">
+</center>
+<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+
+<div style="text-align: center;">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/82daa8e8-ff07-40f1-94ef-d65e996815df" alt="Your Image Alt Text">
+</div>
+<p align="center">Figure. Table of Metric Visualization</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/35432523-9b1d-432e-9f2c-aede5d3f6204" alt="Image Description" />
+</div>
+<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/64f973dd-edb8-4862-bd15-657dc0230c99" alt="Image Description" />
+</div>
+<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/8ec372fd-fece-48c5-b067-dd0a306bf24b" alt="Image Description" />
+</div>
+<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/32b17496-0220-4120-b735-6bf800e814b1" alt="Image Description" />
+</div>
+<p align="center">Figure. Learning Curve</p>
+
 ---
 ## Part E. Discussion section
 
