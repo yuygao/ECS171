@@ -414,7 +414,11 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 ---
 ### XGBoost
+
+<div align="center">
 ![3861694665273_ pic](https://github.com/yuygao/ECS171/assets/114432520/267fbef7-7068-43b1-a956-8b112121f745)
+</div>
+<p align="center">Figure. Table of XGBoost RandomizedSearchCV and GridSearchCV</p>
 
 ![3871694665282_ pic](https://github.com/yuygao/ECS171/assets/114432520/41e21e6a-7a7f-49ae-b31c-364cf03d5b00)
 
