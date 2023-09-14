@@ -458,10 +458,28 @@ These seven components contribute to a comprehensive evaluation and optimization
 </div>
 <p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
 
+
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/f89cd6ad-beed-46c3-a285-e06da6c97a13" alt="Image Description" />
 </div>
 <p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/f9be9247-dba0-493d-a7a9-1b1c607ff2e7" alt="Image Description" />
+</div>
+<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/3b6cbaf4-96b3-40bd-b992-9648f2136eb4" alt="Image Description" />
+</div>
+<p align="center">Figure. Learning Curve</p>
+
+ <div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/c8345537-2121-4aea-a157-3525d1cd23e6)" alt="Image Description" />
+</div>
+<p align="center">Figure. Validation Curve</p>
+
 
 ---
 ### XGBoost
