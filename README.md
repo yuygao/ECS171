@@ -273,7 +273,7 @@ This table shows us the chosen variables, excluding those that have strong corre
 ### Heatmap
 #### Original Heatmap
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/5ebc51b2-a4b2-479b-96ff-b4f2f0436aa4" alt="Heatmap1" width="600" height="600">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/5ebc51b2-a4b2-479b-96ff-b4f2f0436aa4" alt="Heatmap1">
 </div>
 <p align="center">Figure.3 Original Heatmap</p>
 
