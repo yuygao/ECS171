@@ -322,6 +322,9 @@ This section covers data preprocessing and includes the following steps:
    - correlation matrix (before remove)
 ![8](https://github.com/yuygao/ECS171/assets/112483058/72fbe0cb-880b-48e8-90b0-3c644974f746)
 
+ - Removal of Highly Correlated Variables:
+    - We identify and drop any columns th
+
 ---
 ## Part D. Results section
 We will focus our attention on four different models: Random Forest, XGBoost, LGBM, and k-NN. Within the scope of these four modeling approaches, we identify seven essential components:
