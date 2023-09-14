@@ -414,6 +414,20 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 ---
 ### XGBoost
+![3861694665273_ pic](https://github.com/yuygao/ECS171/assets/114432520/267fbef7-7068-43b1-a956-8b112121f745)
+
+![3871694665282_ pic](https://github.com/yuygao/ECS171/assets/114432520/41e21e6a-7a7f-49ae-b31c-364cf03d5b00)
+
+![3881694665295_ pic](https://github.com/yuygao/ECS171/assets/114432520/c6da93bd-5b33-430f-a172-7e2f840565f7)
+![3921694665319_ pic](https://github.com/yuygao/ECS171/assets/114432520/06cfdc09-5fa7-439f-9a18-8a80d04c8432)
+
+
+![3901694665305_ pic](https://github.com/yuygao/ECS171/assets/114432520/2fcdff19-6eae-40df-a891-c1cedbd9420f)
+
+![3891694665300_ pic](https://github.com/yuygao/ECS171/assets/114432520/cab988f7-2c83-4a9b-a107-3e89f7db6de6)
+
+![3911694665312_ pic](https://github.com/yuygao/ECS171/assets/114432520/f2078bb7-ab74-4aef-a714-fc9a10dbb09c)
+
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/4ffa4fb9-a903-4f3f-80b4-ba05c8171ac8" alt="Image Description">
