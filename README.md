@@ -375,12 +375,16 @@ This section covers data preprocessing and includes the following steps:
    - Specifically, we check for columns with correlation values exceeding a threshold of 0.7 and then rerun the correlation matrix.
    - correlation matrix (before remove)
 ![8](https://github.com/yuygao/ECS171/assets/112483058/72fbe0cb-880b-48e8-90b0-3c644974f746)
+<p align="center">Figure.16  Heatmap of Original Dataset</p>
+
 
  - Removal of Highly Correlated Variables:
     - We identify and drop any columns that exhibit correlations greater than 0.7.
     - This step helps us determine which features are most relevant to our problem through correlation analysis.
     - correlation matrix (after remove):
 ![9](https://github.com/yuygao/ECS171/assets/112483058/cea77673-91fc-40f2-900f-f741f3d811e5)
+<p align="center">Figure.17  Heatmap of Dataset aftrer removing Highly Correlated Variables</p>
+
 
 Data Transformation:
  - Label Encoding for Categorical Variables:
@@ -391,11 +395,15 @@ Data Transformation:
     - We normalize the data using the StandardScaler() method. 
     - Additionally, we conduct a histogram plot to test for data normality. 
 ![10](https://github.com/yuygao/ECS171/assets/112483058/fd6e619c-d6bd-4e7e-a786-a1fa36e6a5af)
+<p align="center">Figure.18  Histogram of checking data normality by using StandardScaler</p>
+
 
  - Normalization Using MinMaxScaler:
     - We normalize the data using the MinMaxScaler() method.
     - A histogram plot is used to test for data normality.
 ![11](https://github.com/yuygao/ECS171/assets/112483058/917247e9-7085-4b04-9cd6-3084f9bd8c8d)
+<p align="center">Figure.19  Histogram of checking data normality by using MinMaxScaler</p>
+
 
  - Log Transformation of "Price":
     - It's important to note that our target variable, "price," has already been transformed into its natural logarithm (log of price) in the raw dataset we obtained from Kaggle.
@@ -445,40 +453,40 @@ These seven components contribute to a comprehensive evaluation and optimization
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/ddb6d867-15ad-4516-aefb-d78c6f6fe821">
 </center>
-<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.20 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/6f52e04d-e21c-4c21-bc9b-0ebc91b7ab76" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure. Table of Metric Visualization</p>
+<p align="center">Figure.21 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/0e98b03a-7742-4dcf-81d9-5f57c857eb38" alt="Image Description" />
 </div>
-<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.22 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/f89cd6ad-beed-46c3-a285-e06da6c97a13" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.23 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/f9be9247-dba0-493d-a7a9-1b1c607ff2e7" alt="Image Description" />
 </div>
-<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.24  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/3b6cbaf4-96b3-40bd-b992-9648f2136eb4" alt="Image Description" />
 </div>
-<p align="center">Figure. Learning Curve</p>
+<p align="center">Figure.25 Learning Curve</p>
 
  <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/c8345537-2121-4aea-a157-3525d1cd23e6" alt="Image Description" />
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/c8345537-2121-4aea-a157-3525d1cd23e6)" alt="Image Description" />
 </div>
-<p align="center">Figure. Validation Curve</p>
+<p align="center">Figure.26 Validation Curve</p>
 
 
 ---
@@ -487,40 +495,40 @@ These seven components contribute to a comprehensive evaluation and optimization
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/192faa28-e5c6-4430-be02-5933ffbcbc5c">
 </center>
-<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.27 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/6d475315-5399-4106-a390-198503416bb0" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure. Table of Metric Visualization</p>
+<p align="center">Figure.28 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/16a0b6cd-abc5-4d85-81b6-211ead2829dc" alt="Image Description" />
 </div>
-<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.29 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/56f44763-fcca-425f-b79e-7aea85f26d0f" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.30 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/b8d537c0-eddb-47a3-b23e-4dbb306b2b85" alt="Image Description" />
 </div>
-<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.31  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/a218dca7-3d85-40d0-ac29-136398d2e4c7" alt="Image Description" />
 </div>
-<p align="center">Figure. Learning Curve</p>
+<p align="center">Figure.32 Learning Curve</p>
 
  <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/a0d70425-a1cf-4122-b2fa-788a76354b9e" alt="Image Description" />
 </div>
-<p align="center">Figure. Validation Curve</p>
+<p align="center">Figure.33 Validation Curve</p>
 
 ---
 ### LightGBM
@@ -528,77 +536,75 @@ These seven components contribute to a comprehensive evaluation and optimization
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/789bdad4-e8f7-47ab-97d4-22decc7f006f">
 </center>
-<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.34 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/82daa8e8-ff07-40f1-94ef-d65e996815df" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure. Table of Metric Visualization</p>
+<p align="center">Figure.35 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/35432523-9b1d-432e-9f2c-aede5d3f6204" alt="Image Description" />
 </div>
-<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.36 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/64f973dd-edb8-4862-bd15-657dc0230c99" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.37 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/8ec372fd-fece-48c5-b067-dd0a306bf24b" alt="Image Description" />
 </div>
-<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.38  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/32b17496-0220-4120-b735-6bf800e814b1" alt="Image Description" />
 </div>
-<p align="center">Figure. Learning Curve</p>
-
-
+<p align="center">Figure.39 Learning Curve</p>
 
 ---
 ### k-NN Algorithm (KNN)
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/03786470-b442-4cb7-98da-290369359b88">
 </center>
-<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.40 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/c21d8d07-4dee-4df5-b33c-efd44e3ef75e" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure. Table of Metric Visualization</p>
+<p align="center">Figure.41 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/b56213a1-16a7-4082-8e07-22911c4aefec" alt="Image Description" />
 </div>
-<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.42 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/ce6cff34-0c4d-40d3-89a8-d7fb650b48a3" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.43 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/43c6a7fa-195e-435c-b1f0-dd65d94b16e7" alt="Image Description" />
 </div>
-<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.44  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/d2197ea3-c627-434e-aaf9-e5d66e79b132" alt="Image Description" />
 </div>
-<p align="center">Figure. Learning Curve</p>
+<p align="center">Figure.45 Learning Curve</p>
 
  <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/c22ac14d-d637-4a2d-ab76-e177d04eaebc" alt="Image Description" />
 </div>
-<p align="center">Figure. MSE, R-squared vs. Model Complexity</p>
+<p align="center">Figure.46 MSE, R-squared vs. Model Complexity</p>
 
 
 ---
