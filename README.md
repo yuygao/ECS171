@@ -25,7 +25,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 - Link to our jupyter notebook: https://github.com/yuygao/ECS171/blob/642b1f715fd463407762b3f1dbbc94f31e0c8863/Preprocessing%20%26%20First%20Model%20building%20and%20evaluation%20Milestone.ipynb
 
 **Final Submission**
-- Link to our jupyter notebook: 
+- Link to our jupyter notebook: https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb
 
 --- 
 # Data Overview
