@@ -484,41 +484,43 @@ These seven components contribute to a comprehensive evaluation and optimization
 ---
 ### XGBoost
 
-<div align="center">
-  <img src="[https://github.com/yuygao/ECS171/assets/114623522/4ffa4fb9-a903-4f3f-80b4-ba05c8171ac8](https://github.com/yuygao/ECS171/assets/114432520/267fbef7-7068-43b1-a956-8b112121f745)" alt="Image Description">
-</div>
-<p align="center">Figure. Table of XGBoost RandomizedSearchCV and GridSearchCV</p>
+<center>
+  <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/192faa28-e5c6-4430-be02-5933ffbcbc5c">
+</center>
+<p align="center">Figure. Table of RandomizedSearchCV and GridSearchCV</p>
 
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/25b13bcd-7291-462c-be06-c4b90806d5da" alt="Image Description">
+<div style="text-align: center;">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/6d475315-5399-4106-a390-198503416bb0" alt="Your Image Alt Text">
 </div>
 <p align="center">Figure. Table of Metric Visualization</p>
 
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/4b8ca132-49fd-47bb-bfca-aa77a0f34b1c" alt="Your Image Description">
-</div>
-<p align="center">Figure. Scatter Plot Training Values vs. Test Values</p>
-
-
-<p align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/15e8508b-1312-45c5-814b-60328ed1dd59" alt="Your Image Alt Text">
-</p>
-<p align="center">Figure. Learning Curve </p>
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/4536053a-fcb9-4c42-961f-f56594df3466" alt="Image Alt Text">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/16a0b6cd-abc5-4d85-81b6-211ead2829dc" alt="Image Description" />
 </div>
-<p align="center">Figure. histogram of XGBoost Feature Importance ranking</p>
+<p align="center">Figure. Change in MSE, MAE, RMSE, R2</p>
 
-<div style="text-align:center;">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/62a5700c-fc3a-41a8-b34f-b31c6857b62e" alt="Your Image Description">
-</div>
-<p align="center">Figure. Validation Curve </p>
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/35da47a9-5575-4299-a3a4-ba0c166edcfd" alt="Your Image Alt Text">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/56f44763-fcca-425f-b79e-7aea85f26d0f" alt="Image Description" />
 </div>
-<p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
+<p align="center">Figure. Scatter for Predicted vs. Actual Price</p>
+
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/b8d537c0-eddb-47a3-b23e-4dbb306b2b85" alt="Image Description" />
+</div>
+<p align="center">Figure.  Random Forest Feature Importances (Gain)</p>
+
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/a218dca7-3d85-40d0-ac29-136398d2e4c7" alt="Image Description" />
+</div>
+<p align="center">Figure. Learning Curve</p>
+
+ <div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/a0d70425-a1cf-4122-b2fa-788a76354b9e" alt="Image Description" />
+</div>
+<p align="center">Figure. Validation Curve</p>
 
 ---
 ### LightGBM
