@@ -1,6 +1,13 @@
 # ECS171
 Install Library
 ```ruby
+!pip3 install xgboost
+!pip3 install imblearn
+!pip3 install reshape
+!pip3 install graphviz
+```
+Set Up Coding Environment
+```ruby
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -23,17 +30,6 @@ from scipy.stats import uniform, randint
 from sklearn.ensemble import RandomForestRegressor
 from math import sqrt
 from sklearn.model_selection import learning_curve, validation_curve
-```
-Set Up Coding Environment
-```ruby
-import numpy as np
-import pandas as pd
-import seaborn as sns
-from scipy import stats
-from sklearn import metrics
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, StandardScaler
 ```
 **Assignment 1: Data Exploration Milestone**
 - Link to Dataset: https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml?select=test.csv
