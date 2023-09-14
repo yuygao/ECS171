@@ -303,19 +303,25 @@ This table shows us the chosen variables, excluding those that have strong corre
 ## Ⅳ. Results
 We will focus our attention on four different models: Random Forest, XGBoost, LGBM, and k-NN. Within the scope of these four modeling approaches, we identify seven essential components:
 
-#### 1. Randomized Hyperparameter Search: 
+**1. Randomized Hyperparameter Search:**
 This phase encompasses an extensive exploration of hyperparameter options, ensuring a comprehensive search for optimal settings.
-#### 2. Grid Hyperparameter Search: 
+
+**2. Grid Hyperparameter Search:** 
 Following the initial exploration, we conduct a targeted search to pinpoint the most effective hyperparameters.
-#### 3. Metric Visualization: 
+
+**3. Metric Visualization:** 
 To evaluate model performance, we employ visualizations of key metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R2) in relation to the number of estimators.
-#### 4. Scatter Plot Analysis: 
+
+**4. Scatter Plot Analysis:** 
 Utilizing scatter plots, we visually compare predicted prices against actual prices, offering valuable insights into model accuracy.
-#### 5. Feature Selection Techniques: 
+
+**5. Feature Selection Techniques:** 
 We apply feature selection methods to identify and leverage the most pertinent features, thereby enhancing the predictive capabilities of our models.
-#### 6. Learning Curve Analysis: 
+
+**6. Learning Curve Analysis:** 
 Learning curves aid in comprehending how model performance evolves with increasing training data, shedding light on potential areas for improvement.
-#### 7. Validation Curve Analysis: 
+
+**7. Validation Curve Analysis:** 
 Validation curves play a crucial role in fine-tuning hyperparameters and assessing their impact on overall model performance.
 These seven components contribute to a comprehensive evaluation and optimization of our four modeling approaches, ensuring we effectively utilize the full potential of each model while optimizing feature selection to improve results.
 
