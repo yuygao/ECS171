@@ -705,27 +705,27 @@ We began our project by selecting four machine learning models: Random Forest, X
 
 We selected for Random Forest as our baseline model over Decision Trees or Linear Regression for several compelling reasons:
 
-- Overfitting Reduction and Higher Predictive Accuracy: Random Forest helps us prevent overfitting, which is essentially when our model fits the training data too closely and struggles to generalize to new, unseen data. This is especially important in the context of predicting Airbnb listing prices, as we're dealing with a lot of variables and complex relationships. Random Forest generally gives us more accurate predictions compared to a single Decision Tree. It does this by combining the predictions from multiple trees, which helps us avoid making predictions that are biased or overly complicated. This is a huge advantage when you consider the factors that can influence Airbnb listing prices.
+- **Overfitting Reduction and Higher Predictive Accuracy:** Random Forest helps us prevent overfitting, which is essentially when our model fits the training data too closely and struggles to generalize to new, unseen data. This is especially important in the context of predicting Airbnb listing prices, as we're dealing with a lot of variables and complex relationships. Random Forest generally gives us more accurate predictions compared to a single Decision Tree. It does this by combining the predictions from multiple trees, which helps us avoid making predictions that are biased or overly complicated. This is a huge advantage when you consider the factors that can influence Airbnb listing prices.
   
-- Non-Linear Flexibility: Random Forest doesn't make assumptions about the data having a linear relationship between its features (like Linear Regression does). This is important because not all real-world datasets, including Airbnb listings, follow these linear patterns. Random Forest's ability to capture nonlinear relationships is a significant advantage in such cases.
+- **Non-Linear Flexibility:** Random Forest doesn't make assumptions about the data having a linear relationship between its features (like Linear Regression does). This is important because not all real-world datasets, including Airbnb listings, follow these linear patterns. Random Forest's ability to capture nonlinear relationships is a significant advantage in such cases.
   
-- Feature Importance: Random Forest could identify the variables with the most significant impact on price predictions. This feature is useful for gaining deeper understanding into the factors that influence listing prices.
+- **Feature Importance:** Random Forest could identify the variables with the most significant impact on price predictions. This feature is useful for gaining deeper understanding into the factors that influence listing prices.
 
 **2. Ensemble Models (XGBoost, LGBM, Random Forest):**
 
 We decided to include ensemble models, namely XGBoost, LGBM, and Random Forest, for several compelling reasons:
 
-- Robustness: Ensemble models are known for their robustness. They can handle tricky stuff like complex, not-so-straightforward connections in the data, even when there's noise (data that doesn't quite fit) and outliers (data that's really different). When we're trying to predict Airbnb listing prices, where there's a ton of data going on at once, having models that can handle all this mess is useful.
+- **Robustness:** Ensemble models are known for their robustness. They can handle tricky stuff like complex, not-so-straightforward connections in the data, even when there's noise (data that doesn't quite fit) and outliers (data that's really different). When we're trying to predict Airbnb listing prices, where there's a ton of data going on at once, having models that can handle all this mess is useful.
   
-- Feature Importance Insights: Ensemble models could help us identify feature importance. In our case, they show us which parts of our data have the most impact on predicting prices. This helps us make smart decisions based on the data and understand how prices work better.
+- **Feature Importance Insights:** Ensemble models could help us identify feature importance. In our case, they show us which parts of our data have the most impact on predicting prices. This helps us make smart decisions based on the data and understand how prices work better.
 
 **3. k-NN Algorithm:**
 
 We also introduced the k-NN algorithm into our model selection for specific purposes:
 
-- Simplicity: k-NN is relatively straightforward to implement and understand. It serves as a starting point for us to figure out how much we can predict just by looking at similar nearby listings.
+- **Simplicity:** k-NN is relatively straightforward to implement and understand. It serves as a starting point for us to figure out how much we can predict just by looking at similar nearby listings.
   
-- Interpretability: k-NN offers a high level of interpretability. Predictions are based on the prices of the nearest neighbors, making it easy to explain why a particular price prediction was made.  
+- **Interpretability:** k-NN offers a high level of interpretability. Predictions are based on the prices of the nearest neighbors, making it easy to explain why a particular price prediction was made.  
 
 In summary, our model selection strategy combines the robustness and predictive power of ensemble models with the simplicity and interpretability of k-NN to comprehensively address the regression tasks of predicting Airbnb listing prices.
 
@@ -745,7 +745,7 @@ In this section, we will discuss the results from each model: Random Forest, XGB
 
 We employed a Random Forest model as our baseline for predicting the 'price' target variable, splitting the dataset into 80% training and 20% testing sets. Utilizing RandomizedSearchCV, we explored a wide range of hyperparameters and identified the best parameters, subsequently fine-tuning them with GridSearchCV to construct our final Random Forest model. We evaluated its performance on the test dataset using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared ($R^2$). This evaluation process is critical to assess whether the model has good generalization or shows signs of overfitting (performing exceptionally well on training data but poorly on test data).
 
-Our initial parameter grid spanned n_estimators (ranging from 100 to 1000), max_depth (ranging from 3 to 10), and min_samples_split (ranging from 2 to 10). After Randomized Search, we found the optimal parameters to be 400 estimators, a minimum sample split of 2, and a maximum depth of 8. Grid Search further refined these values to 450 estimators, a minimum sample split of 2, and a maximum depth of 9. 
+Our initial parameter grid spanned the number of estimators (ranging from 100 to 1000), maximum depth (ranging from 3 to 10), and minimum samples split (ranging from 2 to 10). After Randomized Search, we found the optimal parameters to be 400 estimators, a minimum sample split of 2, and a maximum depth of 8. Grid Search further refined these values to 450 estimators, a minimum sample split of 2, and a maximum depth of 9. 
 
 With these carefully selected parameters, we constructed our final Random Forest model, which exhibited impressive results when tested on the dataset. This included an MSE of 0.170, MAE of 0.317, RMSE of 0.412, and an $R^2$ of 0.636. On the training set, we observed an MSE of 0.142, MAE of 0.292, RMSE of 0.377, and an $R^2$ of 0.689. These metrics not only indicated the prevention of overfitting but also demonstrated the model's strong generalization to new data. Additionally, our visualization of the first 10 iterations of MSE, MAE, RMSE, and $R^2$ showed consistent trends between the training and test metrics. In this case, the testing line exceeded the training line for MSE, MAE, and RMSE, while for $R^2$, the testing line was below the training line. These observations highlight our model's effective ability to generalize.
 
