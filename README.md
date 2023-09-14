@@ -249,6 +249,7 @@ In the fifth iteration, the training MSE decreases significantly, indicating a v
 
 ![final](https://github.com/yuygao/ECS171/assets/112483058/2b849a5c-0562-4d2e-8b22-5c1b9ebcbf66)
 
+---
 
 # Final Submission
 
