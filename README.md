@@ -336,7 +336,25 @@ Data Transformation:
  - Normalization Using StandardScaler:
     - We normalize the data using the StandardScaler() method. 
     - Additionally, we conduct a histogram plot to test for data normality. 
+![10](https://github.com/yuygao/ECS171/assets/112483058/fd6e619c-d6bd-4e7e-a786-a1fa36e6a5af)
 
+ - Normalization Using MinMaxScaler:
+    - We normalize the data using the MinMaxScaler() method.
+    - A histogram plot is used to test for data normality.
+![11](https://github.com/yuygao/ECS171/assets/112483058/917247e9-7085-4b04-9cd6-3084f9bd8c8d)
+
+ - Log Transformation of "Price":
+    - It's important to note that our target variable, "price," has already been transformed into its natural logarithm (log of price) in the raw dataset we obtained from Kaggle.
+    - We retain it in its log-transformed state as this transformation is crucial for our analysis.
+ - Merging Data:
+    - We merge the data frames containing standardized data, normalized data, and the target variable log_price.
+
+**Preparing for Model Building**
+In this section, we split dataset at an 8:2 ratio with original dataset and describes our models:
+   1. Random Forest - as a baseline model
+   2. XGBoost
+   3. LightGBM
+   4. KNN
 
 
 ---
