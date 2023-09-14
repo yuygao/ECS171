@@ -544,33 +544,34 @@ These seven components contribute to a comprehensive evaluation and optimization
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114432520/127a1074-bbdf-4322-be1d-9e5773182a3d" alt="Image Description" />
 </div>
+<p align="center">Figure.22 Change in MSE, MAE, RMSE, R2</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/0e98b03a-7742-4dcf-81d9-5f57c857eb38" alt="Image Description" />
 </div>
-<p align="center">Figure.22 Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.23 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/f89cd6ad-beed-46c3-a285-e06da6c97a13" alt="Image Description" />
 </div>
-<p align="center">Figure.23 Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.24 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/f9be9247-dba0-493d-a7a9-1b1c607ff2e7" alt="Image Description" />
 </div>
-<p align="center">Figure.24  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.25  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/3b6cbaf4-96b3-40bd-b992-9648f2136eb4" alt="Image Description" />
 </div>
-<p align="center">Figure.25 Learning Curve</p>
+<p align="center">Figure.26 Learning Curve</p>
 
  <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/c8345537-2121-4aea-a157-3525d1cd23e6)" alt="Image Description" />
 </div>
-<p align="center">Figure.26 Validation Curve</p>
+<p align="center">Figure.27 Validation Curve</p>
 
 
 ---
@@ -579,40 +580,40 @@ These seven components contribute to a comprehensive evaluation and optimization
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/192faa28-e5c6-4430-be02-5933ffbcbc5c">
 </center>
-<p align="center">Figure.27 Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.28 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/6d475315-5399-4106-a390-198503416bb0" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure.28 Table of Metric Visualization</p>
+<p align="center">Figure.29 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/16a0b6cd-abc5-4d85-81b6-211ead2829dc" alt="Image Description" />
 </div>
-<p align="center">Figure.29 Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.30 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/56f44763-fcca-425f-b79e-7aea85f26d0f" alt="Image Description" />
 </div>
-<p align="center">Figure.30 Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.31 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/b8d537c0-eddb-47a3-b23e-4dbb306b2b85" alt="Image Description" />
 </div>
-<p align="center">Figure.31  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.32  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/a218dca7-3d85-40d0-ac29-136398d2e4c7" alt="Image Description" />
 </div>
-<p align="center">Figure.32 Learning Curve</p>
+<p align="center">Figure.33 Learning Curve</p>
 
  <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/a0d70425-a1cf-4122-b2fa-788a76354b9e" alt="Image Description" />
 </div>
-<p align="center">Figure.33 Validation Curve</p>
+<p align="center">Figure.34 Validation Curve</p>
 
 ---
 ### LightGBM
@@ -620,75 +621,75 @@ These seven components contribute to a comprehensive evaluation and optimization
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/789bdad4-e8f7-47ab-97d4-22decc7f006f">
 </center>
-<p align="center">Figure.34 Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.35 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/82daa8e8-ff07-40f1-94ef-d65e996815df" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure.35 Table of Metric Visualization</p>
+<p align="center">Figure.36 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/35432523-9b1d-432e-9f2c-aede5d3f6204" alt="Image Description" />
 </div>
-<p align="center">Figure.36 Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.37 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/64f973dd-edb8-4862-bd15-657dc0230c99" alt="Image Description" />
 </div>
-<p align="center">Figure.37 Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.38 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/8ec372fd-fece-48c5-b067-dd0a306bf24b" alt="Image Description" />
 </div>
-<p align="center">Figure.38  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.39  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/32b17496-0220-4120-b735-6bf800e814b1" alt="Image Description" />
 </div>
-<p align="center">Figure.39 Learning Curve</p>
+<p align="center">Figure.40 Learning Curve</p>
 
 ---
 ### k-NN Algorithm (KNN)
 <center>
   <img width="1016" alt="733665364656940689" src="https://github.com/yuygao/ECS171/assets/112483058/03786470-b442-4cb7-98da-290369359b88">
 </center>
-<p align="center">Figure.40 Table of RandomizedSearchCV and GridSearchCV</p>
+<p align="center">Figure.41 Table of RandomizedSearchCV and GridSearchCV</p>
 
 <div style="text-align: center;">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/c21d8d07-4dee-4df5-b33c-efd44e3ef75e" alt="Your Image Alt Text">
 </div>
-<p align="center">Figure.41 Table of Metric Visualization</p>
+<p align="center">Figure.42 Table of Metric Visualization</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/b56213a1-16a7-4082-8e07-22911c4aefec" alt="Image Description" />
 </div>
-<p align="center">Figure.42 Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.43 Change in MSE, MAE, RMSE, R2</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/ce6cff34-0c4d-40d3-89a8-d7fb650b48a3" alt="Image Description" />
 </div>
-<p align="center">Figure.43 Scatter for Predicted vs. Actual Price</p>
+<p align="center">Figure.44 Scatter for Predicted vs. Actual Price</p>
 
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/43c6a7fa-195e-435c-b1f0-dd65d94b16e7" alt="Image Description" />
 </div>
-<p align="center">Figure.44  Random Forest Feature Importances (Gain)</p>
+<p align="center">Figure.45  Random Forest Feature Importances (Gain)</p>
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/d2197ea3-c627-434e-aaf9-e5d66e79b132" alt="Image Description" />
 </div>
-<p align="center">Figure.45 Learning Curve</p>
+<p align="center">Figure.46 Learning Curve</p>
 
  <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/c22ac14d-d637-4a2d-ab76-e177d04eaebc" alt="Image Description" />
 </div>
-<p align="center">Figure.46 MSE, R-squared vs. Model Complexity</p>
+<p align="center">Figure.47 MSE, R-squared vs. Model Complexity</p>
 
 
 ---
@@ -813,7 +814,7 @@ To compare and select the best model among multiple candidates, various metrics 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114432520/494cfd0d-0098-48d3-b6c2-3d5df4149d2d" alt="Image Description" />
 </div>
-<p align="center">Figure.47 Change in MSE, MAE, RMSE, R2</p>
+<p align="center">Figure.48 Change in MSE, MAE, RMSE, R2</p>
 
 - After comparing these metrics, We found that LGBM consistently achieved lower MSE, RMSE, and higher $R^2$ values on both training and testing sets. 
 ---
