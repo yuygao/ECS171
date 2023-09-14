@@ -24,7 +24,10 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 **Assignment 2: Preprocessing & First Model building and evaluation Milestone**
 - Link to our jupyter notebook: https://github.com/yuygao/ECS171/blob/642b1f715fd463407762b3f1dbbc94f31e0c8863/Preprocessing%20%26%20First%20Model%20building%20and%20evaluation%20Milestone.ipynb
 
+**Final Submission**
+- Link to our jupyter notebook: 
 
+--- 
 # Data Overview
 The original dataset contains 99,569 rows and 29 columns. For this project, we have extracted a subset consisting of **31,876 data** records and **20 columns** for the following analysis and modeling sections. In the generated dataset, there are 11 categorical variables and 9 numerical variables. To enable effective processing, we will encode the categorical data by transforming categorical data into integer classes. This transformation will help to assign integer values ranging from 0 to k-1, where 'k' represents the number of categories.
 
