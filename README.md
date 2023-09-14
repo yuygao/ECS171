@@ -253,10 +253,10 @@ In the fifth iteration, the training MSE decreases significantly, indicating a v
 
 # Final Submission
 
-## Part A. Introduction
+## A. Introduction
 Our group project is focused on predicting Airbnb listing prices in major US cities by building a robust prediction model. We're employing various machine learning algorithms to explore the incredible potential of data-driven decision-making in the business sector. The research significance of this project is that building a price prediction model will be profitable for many people. For individual hosts and Airbnb platforms, our price prediction models enhance occupancy rates and revenue by optimizing listing prices. This not only improves the user experience but also ensures competitiveness in local markets. Travelers benefit from predictive pricing by gaining quick insights into accommodation costs, helping them budget their trips more efficiently. Furthermore, the industry itself can leverage price modeling to gain insights into the dynamics and performance of the Airbnb rental market, leading to more informed conclusions about future growth. To conduct this project, we've turned to the Airbnb listings dataset available on Kaggle, focusing on major US cities. This dataset contains 31,876 records with 20 columns, encompassing 11 categorical and 9 numerical variables. Our analysis begins with essential data processing, including data cleaning and encoding. We then employ data visualization techniques to understand data distributions, guiding our decisions on data normalization. Following data preprocessing, we split the dataset into an 80% training set and a 20% testing set, designating "log_price" as the target variable. Subsequently, we construct predictive models on the training data, employing four machine learning approaches: XGBoost, LightGBM (LGBM), Random Forest, and the k-NN Algorithm. To evaluate these models, we employ various metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). Our model selection is based on a comprehensive comparison of these metrics, ensuring that we choose the most accurate model for predicting listing prices. In summary, our data analysis and machine learning techniques enable us to provide a well-informed solution to a real-world business challenge in the Airbnb market.
 
-## Part B. Data Visualization
+## B. Data Visualization
 
 ### Variables summary
 
@@ -364,7 +364,7 @@ Drop a specific column which is greater than a threshold (0.7) and unneccessary 
 
 
 ---
-## Part C. Methods section 
+## C. Methods section 
 
 **Research Question:**
 1. How accurately can the factors predict Airbnb listing prices in the United States?
@@ -502,7 +502,7 @@ print("y_test shape:", y_test.shape)
 
 
 ---
-## Part D. Results section
+## D. Results section
 We will focus our attention on four different models: Random Forest, XGBoost, LGBM, and k-NN. Within the scope of these four modeling approaches, we identify seven essential components:
 
 **1. Randomized Hyperparameter Search:**
@@ -688,7 +688,7 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 
 ---
-## Part E. Discussion section
+## E. Discussion section
 
 In this discussion, we're going to break down our Airbnb listing price predictive modeling project into different parts. We'll explore the rationale behind our choices, interpret the results, and outline our thought process from start to finish. Furthermore, we'll take a close look at the quality of our results and recognize any areas where we may have fallen short.
 
@@ -807,23 +807,23 @@ We have confidence in the results due to the data preparation, hyperparameter fi
 While our project has provided a wide range of ways to predict Airbnb listing prices, it's essential to recognize its limitations and areas for potential improvement. Firstly, the accuracy of our findings relies on the quality of the data we had access to. To make our predictions even more reliable, we can work on improving how we gather data and make sure it's free from any biases. Secondly, we can consider adding more features or using advanced methods to make our models perform even better. For example, think about adding features like nearby attractions or public transport accessibility. Thirdly, although we tried different models, there are even more advanced techniques like neural networks that we can explore in the future to make our predictions even more accurate. Lastly, we didn't account for time-related changes in our analysis. To understand pricing trends better, we can use time series analysis, which looks at how prices change over time, like when prices tend to be higher or lower during certain seasons. 
 
 ---
-## Part F. Conclusion section
+## F. Conclusion section
 
 After a thorough analysis of our modeling results, it's clear that the LightGBM (LGBM) model stands out as the most effective choice for predicting Airbnb listing prices. While we began with the Random Forest model as a baseline, LGBM consistently outperformed it in predictive accuracy. LGBM consistently achieved lower MSE, RMSE, and higher R^2 values on both training and testing sets. Similarly, although the XGBoost model is powerful, it couldn't match LGBM's predictive power, as LGBM consistently achieved lower MSE and RMSE values, indicating greater pattern-capturing ability. Turning to the K-Nearest Neighbors (KNN) algorithm, LGBM once again excelled in predictive accuracy. With lower MSE, RMSE, and better R^2 values on the testing set, LGBM proved its capacity to generalize effectively. Overall, LGBM consistently outperformed other models, avoiding overfitting and demonstrating robust generalization to new data. Its performance across various evaluation metrics makes it the preferred choice for predicting Airbnb listing prices. In summary, due to its consistent and excellent performance, characterized by lower MSE, RMSE, and higher R^2 values, LightGBM (LGBM) is a reasonable choice for predicting Airbnb listing prices. However, there are areas for improvement and future exploration, such as enhancing data quality, exploring additional features, considering more advanced techniques like neural networks, and incorporating temporal analysis to better understand pricing trends over time. In this way, we could do predictive modeling on the real-time dynamics of Airbnb listings prices to provide more valuable insights for hosts and travelers.
 
 ---
-## Part G. Collaboration
+## G. Collaboration
 
 <img width="705" alt="Screenshot 2023-09-13 at 8 41 20 PM" src="https://github.com/yuygao/ECS171/assets/114432520/da5688f8-8aa3-4eb9-ab44-c5e8acc4a425">
 
 There are four of us in our group, Yuanyuan Gao, Yonglin Liang, Wenhui Li, and Yayue Song. We all work as a team and everyone is responsible for a different part. Yuanyuan Gao is our group leader, who was mainly responsible for coordinating everyone's time, setting deadlines and the part of building Random Forest, and LightGBM and analyzing them separately. Wenhui Li is our group coding, who is mainly responsible for building XGBoost and KNN models and doing the model analysis. Yonglin Liang is our group coding, who is mainly responsible for data processing  and data visualization. Yayue Song is our group writer, who was mainly responsible for plot formatting and report writing.
 
 
-## Acknowledgments
+## H. Acknowledgments
 
 We would like to thank our TAs, Mayuri and Yifeng, for their guidance and support throughout this project. Additionally, we extend our appreciation to our group mates for their invaluable contributions towards the success of this project.
 
-## References
+## I. References
 - RudyMizrahi. (2018, March 14). Airbnb listings in major US cities. Kaggle. https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml?select=test.csv 
 
 
