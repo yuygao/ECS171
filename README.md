@@ -403,7 +403,7 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/13a5ff0a-8e61-4d96-921c-57463d28b184" alt="Image Description" />
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/4c76610a-3fa7-459b-bba5-4a6c09f5b05f" alt="Image Description" />
 </div>
 <p align="center">Figure. Scatter Plot Training Values vs. Test Values</p>
 
