@@ -284,6 +284,9 @@ This table shows us the chosen variables, excluding those that have strong corre
 </div>
 <p align="center">Figure.7 PairPlots</p>
 
+Histogram of a numerical feature:
+![Histogram](https://github.com/yuygao/ECS171/assets/112483058/bd1ea6b9-fdf2-4e88-91d1-c32235d7f894)
+
 
 ---
 ## Part C. Methods section 
