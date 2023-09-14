@@ -434,7 +434,7 @@ We selected for Random Forest as our baseline model over Decision Trees or Linea
   
 - Feature Importance: Random Forest could identify the variables with the most significant impact on price predictions. This feature is useful for gaining deeper understanding into the factors that influence listing prices.
 
-** 2. Ensemble Models (XGBoost, LGBM, Random Forest):**
+**2. Ensemble Models (XGBoost, LGBM, Random Forest):**
 
 We decided to include ensemble models, namely XGBoost, LGBM, and Random Forest, for several compelling reasons:
 
@@ -442,7 +442,7 @@ We decided to include ensemble models, namely XGBoost, LGBM, and Random Forest, 
   
 - Feature Importance Insights: Ensemble models could help us identify feature importance. In our case, they show us which parts of our data have the most impact on predicting prices. This helps us make smart decisions based on the data and understand how prices work better.
 
-** 3. k-NN Algorithm:**
+**3. k-NN Algorithm:**
 
 We also introduced the k-NN algorithm into our model selection for specific purposes:
 
@@ -531,14 +531,22 @@ We have confidence in the results due to the data preparation, hyperparameter fi
 While our project has provided a wide range of ways to predict Airbnb listing prices, it's essential to recognize its limitations and areas for potential improvement. Firstly, the accuracy of our findings relies on the quality of the data we had access to. To make our predictions even more reliable, we can work on improving how we gather data and make sure it's free from any biases. Secondly, we can consider adding more features or using advanced methods to make our models perform even better. For example, think about adding features like nearby attractions or public transport accessibility. Thirdly, although we tried different models, there are even more advanced techniques like neural networks that we can explore in the future to make our predictions even more accurate. Lastly, we didn't account for time-related changes in our analysis. To understand pricing trends better, we can use time series analysis, which looks at how prices change over time, like when prices tend to be higher or lower during certain seasons. 
 
 ---
-## Part F: Conclusion section:
+## Part F. Conclusion section
 
 After a thorough analysis of our modeling results, it's clear that the LightGBM (LGBM) model stands out as the most effective choice for predicting Airbnb listing prices. While we began with the Random Forest model as a baseline, LGBM consistently outperformed it in predictive accuracy. LGBM consistently achieved lower MSE, RMSE, and higher R^2 values on both training and testing sets. Similarly, although the XGBoost model is powerful, it couldn't match LGBM's predictive power, as LGBM consistently achieved lower MSE and RMSE values, indicating greater pattern-capturing ability. Turning to the K-Nearest Neighbors (KNN) algorithm, LGBM once again excelled in predictive accuracy. With lower MSE, RMSE, and better R^2 values on the testing set, LGBM proved its capacity to generalize effectively. Overall, LGBM consistently outperformed other models, avoiding overfitting and demonstrating robust generalization to new data. Its performance across various evaluation metrics makes it the preferred choice for predicting Airbnb listing prices. In summary, due to its consistent and excellent performance, characterized by lower MSE, RMSE, and higher R^2 values, LightGBM (LGBM) is a reasonable choice for predicting Airbnb listing prices. However, there are areas for improvement and future exploration, such as enhancing data quality, exploring additional features, considering more advanced techniques like neural networks, and incorporating temporal analysis to better understand pricing trends over time. In this way, we could do predictive modeling on the real-time dynamics of Airbnb listings prices to provide more valuable insights for hosts and travelers.
 
+---
+## Part G. Collaboration
+
+There are four of us in our group, Yuanyuan Gao, Yonglin Liang, Wenhui Li, and Yayue Song. We all work as a team and everyone is responsible for a different part. Yuanyuan Gao is our group leader, who was mainly responsible for coordinating everyone's time, setting deadlines and the part of building Random Forest, and LightGBM and analyzing them separately. Wenhui Li is our group coding, who is mainly responsible for building XGBoost and KNN models and doing the model analysis. Yonglin Liang is our group coding, who is mainly responsible for data processing  and data visualization. Yayue Song is our group writer, who was mainly responsible for plot formatting and report writing.
 
 
+## Acknowledgments
 
+We would like to thank our TAs, Mayuri and Yifeng, for their guidance and support throughout this project. Additionally, we extend our appreciation to our group mates for their invaluable contributions towards the success of this project.
 
+## References
+- RudyMizrahi. (2018, March 14). Airbnb listings in major US cities. Kaggle. https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml?select=test.csv 
 
 
 
