@@ -303,6 +303,39 @@ This table shows us the chosen variables, excluding those that have strong corre
 ---
 ## Part C. Methods section 
 
+**Research Question:**
+1. How accurately can the factors predict Airbnb listing prices in the United States?
+2. Which specific variables have the greatest impact on pricing, as determined by the most suitable prediction model?
+
+**Methods section:**
+The method section will include: Initial Preprocessing, Data Exploration and Analysis, Data preprocessing, and Preparing for Model Building. 
+
+**Initial Preprocessing：**
+To understand our dataset and prepare it for modification, we follow these steps:
+ - Data Overview:
+    - Load Dataset: Load the raw dataset.
+    - Check the Information of the Original Dataset: Use the info() function.
+
+ - Data Cleaning:
+   - Check for missing values or duplicate values.
+   - If any are found, either drop them or aggregate them from the raw dataset.
+   - Create a new dataframe called df_cleaned.
+
+In our initial preprocessing step, we began by examining the raw dataset for missing or duplicate values. We found that our dataset does not contain any missing values. Therefore, there is no need to drop or replace null values with means, medians, or other values.
+
+**Data Exploration and Analysis:**
+In this step, we include the following:
+ - Original Data Exploration and Analysis (EDA)
+    - Identify the Types of Columns in the Original Dataset: This involves categorizing columns as either Categorical or Numerical.
+    - Basic Statistics of Original Data: We display basic statistics using the describe() function.
+
+**Data preprocessing:**
+This section covers data preprocessing and includes the following steps:
+ - Correlation Analysis of the Original Dataset:
+   - Prior to removing variables with high correlations, we conduct a correlation analysis.
+   - Specifically, we check for columns with correlation values exceeding a threshold of 0.7 and then rerun the correlation matrix.
+   - correlation matrix (before remove)
+![8](https://github.com/yuygao/ECS171/assets/112483058/72fbe0cb-880b-48e8-90b0-3c644974f746)
 
 ---
 ## Part D. Results section
