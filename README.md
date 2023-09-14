@@ -494,10 +494,10 @@ print("X_test shape:", X_test.shape)
 print("y_train shape:", y_train.shape)
 print("y_test shape:", y_test.shape)
 ```
-   1. Random Forest - as a baseline model
-   2. XGBoost
-   3. LightGBM
-   4. KNN
+   1. [Random Forest - as a baseline model](https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb)
+   2. [XGBoost](https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb)
+   3. [LightGBM](https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb)
+   4. [k-NN Algorithm (KNN)](https://github.com/yuygao/ECS171/blob/90c7effd71d58d60df346660196a4efa02fbb344/ECS171_Final_Submission%20.ipynb)
 
 
 
