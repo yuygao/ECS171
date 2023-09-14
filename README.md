@@ -46,9 +46,9 @@ from sklearn.model_selection import learning_curve, validation_curve
 
 --- 
 
-### Assignment 1: Data Exploration Milestone 
---- 
-# Data Overview
+# Assignment 1: Data Exploration Milestone 
+
+## Data Overview
 The original dataset contains 99,569 rows and 29 columns. For this project, we have extracted a subset consisting of **31,876 data** records and **20 columns** for the following analysis and modeling sections. In the generated dataset, there are 11 categorical variables and 9 numerical variables. To enable effective processing, we will encode the categorical data by transforming categorical data into integer classes. This transformation will help to assign integer values ranging from 0 to k-1, where 'k' represents the number of categories.
 
 - If a category has less than 4 unique values, we will convert it to a numerical encoding (e.g. 0, 1, 2, 3). 
@@ -65,11 +65,11 @@ We have four main sections for our Data Exploration Milestone:
 
 **4. Data splitting**
 
-# Column Descriptions
+## Column Descriptions
 This table shows us the chosen variables, excluding those that have strong correlations above a threshold of 0.7.
 ![Column Descriptions](https://github.com/yuygao/ECS171/assets/112483058/e9818180-3002-4f2b-b133-d026c1145c39)
 
-# Data processing
+## Data processing
 We cleaning dataset by the following four steps: 
 1. **Checking Missing Values:** We examine any potential missing values within the dataset, if there are missing values exist, we count the number of missing values. For our case, the count of missing values is 0.
 2. **Encoding Data:** Since we have 11 categorical variables, we need to transform these categorical variables into numerical variables for the next step of modeling. In our case, we translated the 'host_identity_verified' variable from True/False to 1/0. We assigned numerical values to the 'property_type' variable as follows: 'Apartment' is represented by 0, 'House' by 1, 'Townhouse' by 2, 'Hostel' by 3, and 'Other' by 4. The same rule (or logic) wad applied to the rest of the variables as well.
@@ -78,7 +78,7 @@ We cleaning dataset by the following four steps:
    
 By these processes, we ensure that our dataset is completely cleansed and optimized for analysis. We removed the missing values and Nan values. Categorical variables are encoded into numerical variables.
 
-# Data distributions (Data Visualization)
+## Data distributions (Data Visualization)
 To understand the distribution and relationships between variables, we generate several visualizations:
 
 - **Five-number Summary Statistics:**
@@ -112,7 +112,7 @@ Using seaborn pairplot, we visualize pairwise relationships between all variable
 
 By combining Five-number Summary Statistics, heatmaps, histograms, Q-Q plot and pairplots, we can comprehensively explore the univariate and bivariate relationships in the dataset. 
 
-# Data splitting 
+## Data splitting 
 After the data cleaning and processing phases, we divided the dataset into an 8:2 split. We proceed to evaluate variable accuracy, concentrating on key factors such as 'instant_bookable' and 'cleaning fee'.
 ```ruby
 X = df.drop('instant_bookable', axis=1)  # Features
