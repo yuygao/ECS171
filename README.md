@@ -800,6 +800,12 @@ Additionally, our visual analysis of the initial 10 iterations of MSE, MAE, RMSE
 Further exploring our model's predictive prowess, the plot comparing predicted prices to actual prices demonstrated a remarkable alignment of data points with the residual line. This underscored the fact that our model's predictions closely mirrored actual prices, highlighting its proficiency in capturing underlying data patterns. Meanwhile, our learning curve demonstrated the gradual convergence of training and test Mean Squared Error (MSE) lines, emphasizing the model's learning process and its enhanced predictive capabilities on unseen data. In our examination of feature importance, we identified the three most influential features affecting price: room type, city, and property type.
 
 ---
+<div align="center">
+  <img src="https://github.com/yuygao/ECS171/assets/114432520/494cfd0d-0098-48d3-b6c2-3d5df4149d2d" alt="Image Description" />
+</div>
+<p align="center">Figure.47 Change in MSE, MAE, RMSE, R2</p>
+
+---
 **Confidence in the Results:**
 We have confidence in the results due to the data preparation, hyperparameter fine-tuning, and model selection process. The inclusion of cross-validation and comprehensive evaluation metrics guaranteed a thorough assessment of the models' performance.
 
@@ -808,11 +814,6 @@ While our project has provided a wide range of ways to predict Airbnb listing pr
 
 ---
 ## F. Conclusion section
-
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114432520/494cfd0d-0098-48d3-b6c2-3d5df4149d2d" alt="Image Description" />
-</div>
-<p align="center">Figure.47 Change in MSE, MAE, RMSE, R2</p>
 
 After a thorough analysis of our modeling results, it's clear that the LightGBM (LGBM) model stands out as the most effective choice for predicting Airbnb listing prices. While we began with the Random Forest model as a baseline, LGBM consistently outperformed it in predictive accuracy. LGBM consistently achieved lower MSE, RMSE, and higher $R^2$ values on both training and testing sets. Similarly, although the XGBoost model is powerful, it couldn't match LGBM's predictive power, as LGBM consistently achieved lower MSE and RMSE values, indicating greater pattern-capturing ability. Turning to the K-Nearest Neighbors (KNN) algorithm, LGBM once again excelled in predictive accuracy. With lower MSE, RMSE, and better $R^2$ values on the testing set, LGBM proved its capacity to generalize effectively. Overall, LGBM consistently outperformed other models, avoiding overfitting and demonstrating robust generalization to new data. Its performance across various evaluation metrics makes it the preferred choice for predicting Airbnb listing prices. In summary, due to its consistent and excellent performance, characterized by lower MSE, RMSE, and higher $R^2$ values, LightGBM (LGBM) is a reasonable choice for predicting Airbnb listing prices. However, there are areas for improvement and future exploration, such as enhancing data quality, exploring additional features, considering more advanced techniques like neural networks, and incorporating temporal analysis to better understand pricing trends over time. In this way, we could do predictive modeling on the real-time dynamics of Airbnb listings prices to provide more valuable insights for hosts and travelers.
 
