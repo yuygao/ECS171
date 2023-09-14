@@ -800,11 +800,18 @@ Additionally, our visual analysis of the initial 10 iterations of MSE, MAE, RMSE
 Further exploring our model's predictive prowess, the plot comparing predicted prices to actual prices demonstrated a remarkable alignment of data points with the residual line. This underscored the fact that our model's predictions closely mirrored actual prices, highlighting its proficiency in capturing underlying data patterns. Meanwhile, our learning curve demonstrated the gradual convergence of training and test Mean Squared Error (MSE) lines, emphasizing the model's learning process and its enhanced predictive capabilities on unseen data. In our examination of feature importance, we identified the three most influential features affecting price: room type, city, and property type.
 
 ---
+
+To compare and select the best model among multiple candidates, various metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R2) should be evaluated. 
+
+- Lower MSE and MAE indicate closer alignment between predicted and actual values, while lower RMSE signifies smaller prediction errors.
+- Higher R2 values imply better explanatory power of the model. 
+
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114432520/494cfd0d-0098-48d3-b6c2-3d5df4149d2d" alt="Image Description" />
 </div>
 <p align="center">Figure.47 Change in MSE, MAE, RMSE, R2</p>
 
+- After comparing these metrics, We found that LGBM consistently achieved lower MSE, RMSE, and higher $R^2$ values on both training and testing sets. 
 ---
 **Confidence in the Results:**
 We have confidence in the results due to the data preparation, hyperparameter fine-tuning, and model selection process. The inclusion of cross-validation and comprehensive evaluation metrics guaranteed a thorough assessment of the models' performance.
