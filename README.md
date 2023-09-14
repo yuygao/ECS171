@@ -350,6 +350,7 @@ Data Transformation:
     - We merge the data frames containing standardized data, normalized data, and the target variable log_price.
 
 **Preparing for Model Building**
+
 In this section, we split dataset at an 8:2 ratio with original dataset and describes our models:
    1. Random Forest - as a baseline model
    2. XGBoost
