@@ -364,7 +364,7 @@ This table shows us the chosen variables, excluding those that have strong corre
 2. Which specific variables have the greatest impact on pricing, as determined by the most suitable prediction model?
 
 **Methods section:**
-The method section will include: Initial Preprocessing, Data Exploration and Analysis, Data preprocessing, and Preparing for Model Building. 
+The method section will include Initial Preprocessing, Data Exploration and Analysis, Data preprocessing, and Preparing for Model Building. 
 
 **Initial Preprocessing：**
 To understand our dataset and prepare it for modification, we follow these steps:
@@ -380,7 +380,7 @@ To understand our dataset and prepare it for modification, we follow these steps
 In our initial preprocessing step, we began by examining the raw dataset for missing or duplicate values. We found that our dataset does not contain any missing values. Therefore, there is no need to drop or replace null values with means, medians, or other values.
 
 **Data Exploration and Analysis:**
-In this step, we include the following:
+In this step, we include the following steps:
  - Original Data Exploration and Analysis (EDA)
     - Identify the Types of Columns in the Original Dataset: This involves categorizing columns as either Categorical or Numerical.
     - Basic Statistics of Original Data: We display basic statistics using the describe() function.
@@ -668,10 +668,11 @@ First, we cleaned up and encoded the data to get it ready for analysis. Then, we
 **Hyperparameter Tuning Strategy:**
 To fine-tune our models, we adopted a two-step approach. We employed random search for initial exploration of hyperparameters, followed by grid search for fine-tuning. Random search allowed us to efficiently explore a broad range of hyperparameters, while grid search refined the best-performing combinations. We believed this two-step approach balanced efficiency with optimization in our hyperparameter tuning process..
 
+---
+
 **Results and Interpretation:**
 In this section, we will discuss the results from each model: Random Forest, XGBoost, LGBM, and KNN. The results of our modeling showed different levels of predictive accuracy for each model. We'll proceed to analyze these results individually.
 
----
 **1. Random Forest as a baseline model:**
 
 We employed a Random Forest model as our baseline to prevent overfitting and enhance generalization for predicting the 'price' target variable, splitting the dataset into 80% training and 20% testing sets. Utilizing RandomizedSearchCV, we explored a wide range of hyperparameters and identified the best parameters, subsequently fine-tuning them with GridSearchCV to construct our final Random Forest model. We evaluated its performance on the test dataset using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). This evaluation process is critical to assess whether the model has good generalization or shows signs of overfitting (performing exceptionally well on training data but poorly on test data).
