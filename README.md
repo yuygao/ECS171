@@ -408,18 +408,40 @@ Data Transformation:
    - We perform label encoding for categorical variables, which includes hardcoding for variables such as property_type, room_type, bed_type, cancellation_policy, and city.
    - We apply label encoding using a label encoder for host_identity_verified, instant_bookable, and cleaning_fee.
  - Combining Dataset with Categorical and Numerical Data
- - Normalization Using StandardScaler:
+ - Standardization Using StandardScaler:
     - We normalize the data using the StandardScaler() method. 
     - Additionally, we conduct a histogram plot to test for data normality. 
 ![10](https://github.com/yuygao/ECS171/assets/112483058/fd6e619c-d6bd-4e7e-a786-a1fa36e6a5af)
 <p align="center">Figure.18  Histogram of checking data normality by using StandardScaler</p>
 
+```ruby
+# Initialize scalers
+standard_scaler = StandardScaler()
+# Standardize the data
+standardized_data = standard_scaler.fit_transform(df_cleaned_new[numerical_columns])
+# Create DataFrames for the transformed data
+standardized_df = pd.DataFrame(standardized_data, columns=numerical_columns)
+print("\nStandardized Data:")
+standardized_df.max()
+```
 
  - Normalization Using MinMaxScaler:
     - We normalize the data using the MinMaxScaler() method.
     - A histogram plot is used to test for data normality.
 ![11](https://github.com/yuygao/ECS171/assets/112483058/917247e9-7085-4b04-9cd6-3084f9bd8c8d)
 <p align="center">Figure.19  Histogram of checking data normality by using MinMaxScaler</p>
+
+```ruby
+# Initialize scalers
+min_max_scaler = MinMaxScaler()
+# Normalize the data
+normalized_data = min_max_scaler.fit_transform(df_cleaned_new[numerical_columns])
+# Create DataFrames for the transformed data
+normalized_df = pd.DataFrame(normalized_data, columns=numerical_columns)
+# Display the results
+print("Normalized Data:")
+normalized_df
+```
 
 
  - Log Transformation of "Price":
@@ -428,9 +450,39 @@ Data Transformation:
  - Merging Data:
     - We merge the data frames containing standardized data, normalized data, and the target variable log_price.
 
+```ruby
+# Target variable
+log_price = df_cleaned_new['log_price']
+# Merge the dataframes for standardized data
+standardized_data_merged = pd.concat([categorical_data, standardized_df, log_price], axis=1)
+standardized_data_merged
+```
+```ruby
+# Target variable
+log_price = df_cleaned_new['log_price']
+# Merge the dataframes for normalized data
+normalized_data_merged = pd.concat([categorical_data, normalized_df,log_price], axis=1)
+normalized_data_merged
+```
+
 **Preparing for Model Building**
 
 In this section, we split dataset at an 8:2 ratio with original dataset and describes our models:
+```ruby
+# Define features (attributes) and labels
+X = normalized_data_merged.drop(['log_price'], axis=1)
+y = normalized_data_merged['log_price']
+
+# labels = np.unique(y)
+# print("Unique labels:", labels)
+
+# Split the data into training and testing sets with 80:20
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+print("X_train shape:", X_train.shape)
+print("X_test shape:", X_test.shape)
+print("y_train shape:", y_train.shape)
+print("y_test shape:", y_test.shape)
+```
    1. Random Forest - as a baseline model
    2. XGBoost
    3. LightGBM
