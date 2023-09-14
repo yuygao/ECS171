@@ -301,21 +301,21 @@ This table shows us the chosen variables, excluding those that have strong corre
 </div>
 <p align="center">Figure.7 PairPlots</p>
 
-Histogram of a numerical feature:
+### Histogram of a numerical feature:
 
 <p align="center">
   <img src="https://github.com/yuygao/ECS171/assets/112483058/bd1ea6b9-fdf2-4e88-91d1-c32235d7f894" alt="Histogram">
 </p>
 <p align="center">Figure.8  Histograms of the frequence of number of bedrooms</p>
 
-Box plot of log_price by property_type:
+### Box plot of log_price by property_type:
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/600835a0-8ddf-48a7-8daf-7e9c25cf24af" alt="Image Alt Text">
 </div>
 <p align="center">Figure.9  Box plot of log_price by property_type</p>
 
-Scatter Plot of the relationship between log_price and the number of bedrooms:
+### Scatter Plot of the relationship between log_price and the number of bedrooms:
 
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/3ed210db-6dc4-4ada-8b12-61a442272c4b" alt="Image Description">
@@ -323,33 +323,33 @@ Scatter Plot of the relationship between log_price and the number of bedrooms:
 <p align="center">Figure.10  Scatter Plot of log_price vs. the number of bedrooms</p>
 
 
-Scatter plot: The relationship between log_price and the number of beds:
+### Scatter plot: The relationship between log_price and the number of beds:
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/32df85a3-2ce1-4c08-aa4f-285a4d6ff285" alt="Image Description">
 </div>
 <p align="center">Figure.11  Scatter Plot of the relationship between log_price and the number of beds</p>
 
 
-Scatter plot: The relationship between log_price and host_response_rate
+### Scatter plot: The relationship between log_price and host_response_rate
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/a01b2607-81c2-4f3d-9b67-cdf4d8b4e4b8" alt="Image Description">
 </div>
 <p align="center">Figure.12  Scatter Plot of log_price vs. host_response_rate</p>
 
 
-Scatter plot: The relationship between log_price and review_scores_rating
+### Scatter plot: The relationship between log_price and review_scores_rating
 <div align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/3d03680d-58a8-4a34-a0db-bf5861e14a36" alt="Description of the image" />
 </div>
 <p align="center">Figure.13  Scatter Plot of log_price vs. review_scores_rating</p>
 
-Scatter plot: The relationship between log_price and number_of_reviews
+### Scatter plot: The relationship between log_price and number_of_reviews
 <p align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/18d75593-5fa2-490e-a44a-b1547b5199ca" alt="Image Description">
 </p>
 <p align="center">Figure.14  Scatter Plot of log_price vs. number_of_reviews</p>
 
-Pie Chart of City
+### Pie Chart of City
 <p align="center">
   <img src="https://github.com/yuygao/ECS171/assets/114623522/bb204012-5079-46b5-9ba5-5261953991f8" alt="Image Description">
 </p>
