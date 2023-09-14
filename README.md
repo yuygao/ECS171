@@ -403,12 +403,12 @@ These seven components contribute to a comprehensive evaluation and optimization
 
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/4c76610a-3fa7-459b-bba5-4a6c09f5b05f" alt="Image Description" />
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/0e98b03a-7742-4dcf-81d9-5f57c857eb38" alt="Image Description" />
 </div>
 <p align="center">Figure. Scatter Plot Training Values vs. Test Values</p>
 
 <div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/114623522/4b9aa244-1c0f-45f6-915e-7f56427cc46f" alt="Your Image Description">
+  <img src="https://github.com/yuygao/ECS171/assets/112483058/9b9fc65c-de6b-4c5f-a3d3-e9bb451cec48" alt="Your Image Description">
 </div>
 <p align="center">Figure. Scatter plot of Predicted vs. Actual Prices</p>
 
