@@ -798,7 +798,7 @@ To begin, we preprocessed the data, divided it into training and testing sets, a
 
 During the hyperparameter search, we explored various options, including different weight schemes ('uniform' and 'distance'), the number of neighbors ranging from 1 to 21, and algorithm choices ('auto', 'ball_tree', 'kd_tree', 'brute'). After Randomized Search, we identified the best configuration as using uniform weight, 11 neighbors, and the kd_tree algorithm. Further refinement through Grid Search resulted in uniform weight, 11 neighbors, and the ball_tree algorithm.
 
-When it came to evaluating our KNN model's performance, we discovered that on the testing set, it achieved an MSE of 0.206, MAE of 0.346, RMSE of 0.454, and an $R^2$ of 0.558. For the training set, the model exhibited an MSE of 0.161, MAE of 0.307, RMSE of 0.402, and an $R^2$ of 0.647. These metrics provided evidence that the model avoided overfitting and showcased robust generalization to new data.
+When it came to evaluating our KNN model's performance, we discovered that on the testing set, it achieved an MSE of 0.206, MAE of 0.346, RMSE of 0.454, and an $R^2$ of 0.558. For the training set, the model exhibited an MSE of 0.161, MAE of 0.307, RMSE of 0.402, and an $R^2$ of 0.647. These metrics provided evidence that the model avoided overfitting and showed robust generalization to new data.
 
 Additionally, our visual analysis of the initial 10 iterations of MSE, MAE, RMSE, and $R^2$ revealed consistent patterns between training and test metrics. Although the test set displayed slightly elevated MSE, MAE, and RMSE values, along with a slightly lower $R^2$, it indicated that the model effectively extended its learning to new data.
 
