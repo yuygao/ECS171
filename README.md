@@ -281,24 +281,6 @@ This table shows us the chosen variables, excluding those that have strong corre
 </div>
 <p align="center">Figure.7 PairPlots</p>
 
-## First model: XGBoost modeling
-### Data Visualization 
-#### Scatter plot of predicted prices vs. actual log_prices
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/5231a2c0-938c-4250-9bfd-118da87dc2f5" alt="Image Title">
-</div>
-<p align="center">Figure.8 Scatter plot of predicted prices vs. actual log_prices</p>
-
-#### Feature Importance Plots to gain insights into the significance of different features in our model
-<div align="center">
-  <img src="https://github.com/yuygao/ECS171/assets/112483058/0a55b7b0-0002-4cbb-804f-1765379ca9ed" alt="Image Description">
-</div>
-<p align="center">Figure.9 histogram of Feature Importance ranking 1</p>
-<div align="center">
-
-<img src="https://github.com/yuygao/ECS171/assets/112483058/14fe3261-a64c-4cb4-88e6-66ca18da1128" alt="important2_0">
-</div>
-<p align="center">Figure.10 histogram of Feature Importance ranking 2</p>
 
 ---
 ## Part C. Methods section 
