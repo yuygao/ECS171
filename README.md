@@ -124,7 +124,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 - y_train shape: (25500,)
 - y_test shape: (6376,)
 
-
+---
 
 ## Assignment 2: Preprocessing & First Model building and evaluation Milestone
 For this milestone, we will focus on four key steps:
