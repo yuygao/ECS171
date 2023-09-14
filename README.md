@@ -382,10 +382,11 @@ We will focus our attention on four different models: Random Forest, XGBoost, LG
 > > We apply feature selection methods to identify and leverage the most pertinent features, thereby enhancing the predictive capabilities of our models.
 
 **6. Learning Curve Analysis:** 
-> > Learning curves aid in comprehending how model performance evolves with increasing training data, shedding light on potential areas for improvement.
+> > Learning curves help to understand how model performance evolves with increased training data, revealing potential areas for improvement.
 
 **7. Validation Curve Analysis:** 
 > > Validation curves play a crucial role in fine-tuning hyperparameters and assessing their impact on overall model performance.
+
 These seven components contribute to a comprehensive evaluation and optimization of our four modeling approaches, ensuring we effectively utilize the full potential of each model while optimizing feature selection to improve results.
 
 ---
@@ -521,7 +522,7 @@ To fine-tune our models, we adopted a two-step approach. We employed random sear
 In this section, we will discuss the results from each model: Random Forest, XGBoost, LGBM, and KNN. The results of our modeling showed different levels of predictive accuracy for each model. We'll proceed to analyze these results individually.
 
 ---
-**Random Forest as a baseline model:**
+**1. Random Forest as a baseline model:**
 
 We employed a Random Forest model as our baseline to prevent overfitting and enhance generalization for predicting the 'price' target variable, splitting the dataset into 80% training and 20% testing sets. Utilizing RandomizedSearchCV, we explored a wide range of hyperparameters and identified the best parameters, subsequently fine-tuning them with GridSearchCV to construct our final Random Forest model. We evaluated its performance on the test dataset using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R^2). This evaluation process is critical to assess whether the model has good generalization or shows signs of overfitting (performing exceptionally well on training data but poorly on test data).
 
@@ -534,7 +535,7 @@ Moreover, when we examined the plot comparing predicted prices to actual prices,
 Finally, in our analysis of feature importance, we observed that the top three significant features affecting price were room type, bathrooms, and city. These observations provide useful information about the factors influencing the 'price' target variable and can guide further model refinement or decision-making.
 
 ---
-**XGBoost:**
+**2. XGBoost:**
 
 We used an XGBoost model to predict the 'price' target variable. We divided the data into an 80% training set and a 20% testing set. We searched for the best model parameters using RandomizedSearchCV and GridSearchCV.
 
@@ -551,7 +552,7 @@ Furthermore, when we looked at the plot comparing predicted prices to actual pri
 In summary, we successfully used an XGBoost model with carefully tuned parameters to avoid overfitting and achieve strong generalization. The model performed excellently on both training and testing data, indicating its effectiveness in capturing the underlying dataset patterns.
 
 ---
-**LightGBM (LGBM):**
+**3. LightGBM (LGBM):**
 
 We employed a LightGBM model to predict the 'price' target variable, dividing our dataset into an 80% training set and a 20% testing set. To find the best model parameters, we conducted both RandomizedSearchCV and GridSearchCV.
 
@@ -569,7 +570,7 @@ In summary, we successfully harnessed a LightGBM model with finely-tuned paramet
 
 
 ---
-**K-Nearest Neighbors (k-NN) Algorithm:**
+**4. K-Nearest Neighbors (k-NN) Algorithm:**
 
 We choose to perform a K-NN algorithm since it’s a non-parametric method and it’s suitable for
 regression and predictions. We began by selecting 'price' as our target variable and splitting the dataset into a training set and a testing set (80:20 ratio). Our approach involved finding the best regression model using KNN, fine-tuning its hyperparameters, assessing its performance, and visualizing the results.
